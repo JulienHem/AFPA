@@ -1,0 +1,139 @@
+        
+           /* HEADER */
+
+.tete {
+    margin-bottom: 10px;
+}    
+
+#LogoJarditou {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#titre {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    font-size: 200%;
+    width: 80%;
+}
+            /* NAV */
+.liste {
+    display: inline-block;   
+}
+.backliste {
+    background-color: #000000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul {
+    display: inline-block;
+}
+
+            /* LOGOPROMO */
+
+#promo {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+            /* ARTICLE*/
+
+hr {
+    width: 100%;
+}
+
+section {
+    width: 850px;
+}
+.colonne {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+article { 
+    display: block;
+    width: 100%;
+    height: 550px;
+    padding: 1px;
+}
+
+
+            /* ASIDE */
+aside {
+    width: 20%;
+    height: 550px;
+    background-color:#C0C0C0 ;
+   
+}
+
+            /* COULEURS LIENS */
+
+a {
+    color: #ffffff
+}
+
+@media screen and (max-width: 768px)
+{
+    html 
+    {
+        font-size: 100%;
+    }
+
+    #LogoJarditou
+    {
+        width: 100%;
+    }
+
+    h1 
+    {
+        font-size: 2rem;
+    }
+
+    hr 
+    {
+        width: auto;
+    }
+
+    img 
+    {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #titre
+    {
+        
+        display: block;
+        width: 100%;
+    }
+
+    .liste
+    {
+        display: block;
+        text-align: center;
+    }
+
+
+    .backliste
+    {
+        text-align: center;
+    }
+    article
+    {
+        text-align: center;
+    }
+  
+    aside
+    {
+        display: none;
+    }
+    
+    article
+    {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+    <html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Jarditou</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">       
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+        <header>
+    <div class="tete">
+        <img src="jarditou_logo.jpg" id="LogoJarditou" alt="Logo Jarditou" width="300" height="100">
+        <p id="titre">Tout le jardin</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#!"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="JarditouBootstrap.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exotableau.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="ExoFormulaire.html">Formulaire</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          </form>
+        </div>
+      </nav>
+            <img src="promotion.jpg" id="promo" alt="promotion">
+        </header>
+<body>
+    <p>*Ces zones sont obligatoires</p>
+    <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
+        <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <label for="nom">Nom*: </label><input type="text" name="nom" id="?" required><br>
+            <label for="prenom">Prénom*: </label><input type="text" name="prenom" required><br>
+            <br>
+            <label for="sexe">Sexe* :</label>
+            <br>
+            <br>
+            <input type="radio" name="sexe" value="Féminin">Féminin
+            <input type="radio" name="sexe" value="Masculin">Masculin<br>
+            <label for="date">Date de naissance*: </label><input type="date" name="ddn" id="date" required><br>
+            <label for="code">Code postal : </label><input type="text" name="code"><br>
+            <label for="adresse">Adresse : </label><input type="text" name="adresse"><br>
+            <label for="ville">Ville : </label><input type="text" name="ville"><br>
+            <label for="email">Email* : </label><input type="text" name="email" placeholder="dave.loper@afpa.fr" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="Sujet">Sujet* : </label><select name="Sujet">
+                <option>Mes commandes</option>
+                <option>Question sur un produit</option>
+                <option>Réclamation</option>
+                <option>Autres</option>
+            </select><br>
+            <label for="question">Votre question* : </label><textarea name="commentaire" rows="2" cols="20" required></textarea>
+        </fieldset>
+            <input type="checkbox"><label for="traitement">J'accepte le traitement informatique de ce formulaire.</label><br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+    </form>
+</body>
+</html>
