@@ -65,39 +65,63 @@
         </div>
       </div>
     </header>
-<body>
-    <p>*Ces zones sont obligatoires</p>
-    <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
-        <fieldset>
-            <legend>Vos Coordonnées</legend>
-            <label for="nom">Nom*: </label><input type="text" name="nom" id="?" required><br>
-            <label for="prenom">Prénom*: </label><input type="text" name="prenom" required><br>
-            <br>
-            <label for="sexe">Sexe* :</label>
-            <br>
-            <br>
-            <input type="radio" name="sexe" value="Féminin">Féminin
-            <input type="radio" name="sexe" value="Masculin">Masculin<br>
-            <label for="date">Date de naissance*: </label><input type="date" name="ddn" id="date" required><br>
-            <label for="code">Code postal : </label><input type="text" name="code"><br>
-            <label for="adresse">Adresse : </label><input type="text" name="adresse"><br>
-            <label for="ville">Ville : </label><input type="text" name="ville"><br>
-            <label for="email">Email* : </label><input type="text" name="email" placeholder="dave.loper@afpa.fr" required><br>
-        </fieldset>
-        <fieldset>
-            <legend>Votre demande</legend>
-            <label for="Sujet">Sujet* : </label><select name="Sujet">
-                <option>Mes commandes</option>
-                <option>Question sur un produit</option>
-                <option>Réclamation</option>
-                <option>Autres</option>
-            </select><br>
-            <label for="question">Votre question* : </label><textarea name="commentaire" rows="2" cols="20" required></textarea>
-        </fieldset>
-            <input type="checkbox"><label for="traitement">J'accepte le traitement informatique de ce formulaire.</label><br>
-            <input type="submit" value="Envoyer">
-            <input type="reset" value="Annuler">
-    </form>
-</body>
+
+    <!-- FORMULAIRE -->
+
+    <body>
+      <p>*Ces zones sont obligatoires</p>
+      <form>
+        <div class="form-group">
+          <legend>Vos Coordonnées</legend>
+          <label for="Nom">Nom*</label><input type="nom" class="form-control" name="nom" id="nom">
+          <label for="prenom">Prénom*: </label><input type="prenom" class="form-control" name="prenom" required><br>
+          <label for="sexe">Sexe* :</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="féminin" id="féminin" value="Féminin" checked>
+          <label class="form-check-label" for="féminin">
+            Féminin
+          </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="masculin" id="masculin" value="Masculin">
+            <label class="form-check-label" for="masculin">
+              Masculin
+            </label>
+            </div>
+        <div class="form-group">
+          <label for="date">Date de naissance*: </label><input type="date" name="ddn" class="form-control" required><br>
+          <label for="code">Code postal : </label><input type="text" name="code" class="form-control"><br>
+          <label for="adresse">Adresse : </label><input type="text" name="adresse" class="form-control"><br>
+          <label for="ville">Ville : </label><input type="text" name="ville" class="form-control"><br>
+          <label for="email">Email* : </label><input type="text" name="email" class="form-control" placeholder="dave.loper@afpa.fr"
+            required><br>
+        </div>
+          <legend>Votre demande</legend>
+        <form>
+          <div class="form-group">
+            <label for="examplecontrolselec1">Sujet</label>
+            <select class="form-control" id="exampleformcontrolselect1">
+              <option>Mes commandes</option>
+              <option>Question sur un produit</option>
+              <option>Réclamation</option>
+              <option>Autres</option>
+            </select>
+          </div>
+        </form>
+          </select><br>
+        <div class="form-group">
+          <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" required></textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Acceptation">
+          <label class="form-check-label" for="Acceptation">J'accepte le traitement informatique de ce
+            formulaire.</label>
+          <br>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <button type="cancel" class="btn btn-primary">Annuler</button>
+      </form>
+    </body>
   </div>
+
 </html>
