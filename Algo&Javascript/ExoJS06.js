@@ -48,8 +48,8 @@
 // }
 
     // EXE 6
-// var pat = window.prompt("Saisissez le nom du patient")
-// var pouls = window.prompt("Saisissez le pouls")
+// var pat = window.prompt("Saisissez le nom du patient");
+// var pouls = window.prompt("Saisissez le pouls"),
 
 // if (pat && pouls == 0)
 // {
@@ -57,13 +57,31 @@
 // }
 
 
-//                     //  EXERCICE 1
+                    //  EXERCICE 1
 
-// var user = window.prompt("Choisissez un nombre")
-// var a = user % 2
+// var user = window.prompt("Choisissez un nombre");
+// var a = user % 2;
 
 // if (a == 0)
 // {
 //     window.alert("Nombre pair")
 // }
 // else window.alert("Nombre impair")
+
+                    // EXERCICE 2
+
+var year = window.prompt("Date de naissance");
+var age = 0;
+
+if (2020 - year < 18)
+
+{ 
+    age = 2020 - year
+    window.alert("Il est mineur" + " " + "Il a" + " " + age + "ans")
+    
+}
+else 
+{
+    age = 2020 - year
+    window.alert("Il est majeur" +" " + "Il a" + " " + age + "ans")
+}
