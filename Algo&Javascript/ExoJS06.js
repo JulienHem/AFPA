@@ -70,18 +70,34 @@
 
                     // EXERCICE 2
 
-var year = window.prompt("Date de naissance");
-var age = 0;
+// var year = window.prompt("Date de naissance");
+// var age = 0;
 
-if (2020 - year < 18)
+// if (2020 - year < 18)
 
-{ 
-    age = 2020 - year
-    window.alert("Il est mineur" + " " + "Il a" + " " + age + "ans")
+// { 
+//     age = 2020 - year
+//     window.alert("Il est mineur" + " " + "Il a" + " " + age + "ans")
     
-}
-else 
+// }
+// else 
+// {
+//     age = 2020 - year
+//     window.alert("Il est majeur" +" " + "Il a" + " " + age + "ans")
+// }
+
+
+                    // EXERCICE 3
+
+var nb1 = window.prompt("Premier nombre");
+var opé = window.prompt("Opérateur");
+var nb3 = window.prompt("Troisème nombre");
+var result = 0
+
+if (nb1 && opé + nb3)
 {
-    age = 2020 - year
-    window.alert("Il est majeur" +" " + "Il a" + " " + age + "ans")
-}
+    result = nb1 + nb3
+    window.alert="Résultat final"
+} 
+else 
+
