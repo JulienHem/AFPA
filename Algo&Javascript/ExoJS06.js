@@ -87,36 +87,58 @@
 // }
 
 
-// EXERCICE 3
+        // EXERCICE 3
 
-var nb1 = parseInt(window.prompt("Premier nombre"));
-var ope = window.prompt("Saisir un opérateur");
-var nb2 = parseInt(window.prompt("Deuxième nombre"));
+// var nb1 = parseInt(window.prompt("Premier nombre"));
+// var ope = window.prompt("Saisir un opérateur");
+// var nb2 = parseInt(window.prompt("Deuxième nombre"));
 
-if (ope != "+" && ope != "-" && ope != "*" && ope != "/") {
-    window.alert("Entrez un opérateur correct");
+// if (ope != "+" && ope != "-" && ope != "*" && ope != "/") {
+//     window.alert("Entrez un opérateur correct");
+// }
+
+// else if (ope == "/" && nb2 == 0) {
+//     window.alert("Erreur");
+// }
+
+// else {
+//     switch (ope) {
+//         case "+":
+//             window.alert(nb1 + nb2);
+//             break;
+
+//         case "-":
+//             window.alert(nb1 - nb2);
+//             break;
+
+//         case "*":
+//             window.alert(nb1 * nb2);
+//             break;
+
+//         case "/":
+//             window.alert(nb1 / nb2);
+//             break;
+//     }
+// }
+
+
+        //  EXERCICE 4
+
+var salaire = parseInt(window.prompt("Salaire de l'employé"));
+var p = 0
+
+if (salaire<1200)
+{
+    window.alert("Participation de 10%")
 }
 
-if (ope == "/" && nb2 == 0) {
-    window.alert("Erreur");
-}
+else{
+    var situation = (window.confirm("Est-il marié?") == true);
+    var kid = parseInt(window.prompt("Nombre d'enfants"));
 
-else {
-    switch (ope) {
-        case "+":
-            window.alert(nb1 + nb2);
-            break;
-
-        case "-":
-            window.alert(nb1 - nb2);
-            break;
-
-        case "*":
-            window.alert(nb1 * nb2);
-            break;
-
-        case "/":
-            window.alert(nb1 / nb2);
-            break;
+    if (situation == false && kid > 0)
+    { 
+        p = p + (kid * 10);
+        alert(p)
     }
 }
