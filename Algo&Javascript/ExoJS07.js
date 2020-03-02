@@ -98,20 +98,14 @@
 
                 // EXERCICE 2
 
-var n = window.prompt("Saisir nombre")
+var n = window.prompt("Saisir nombre");
 console.log("Nombres inférieur à N");
 console.log("================");
 
 do
 {
-  resultat = n
-  console.log("Nombre" + " " + resultat)
+  console.log("Nombre" + " " + n)
 
   n--
 }while ( n >= 0)
 console.log("Fin de la boucle")
-
-
-
-
-
