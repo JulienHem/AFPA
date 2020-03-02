@@ -124,21 +124,39 @@
 
         //  EXERCICE 4
 
-var salaire = parseInt(window.prompt("Salaire de l'employé"));
-var p = 0
+// var situation = (window.confirm("Êtes-vous marié?"));
+// var p = 0
 
-if (salaire<1200)
-{
-    window.alert("Participation de 10%")
-}
+// if (situation)
+// {
+//     p = 25   
+// }
 
-else{
-    var situation = (window.confirm("Est-il marié?") == true);
-    var kid = parseInt(window.prompt("Nombre d'enfants"));
+// else 
+// {
+//     p = 20
+// }
 
-    if (situation == false && kid > 0)
-    { 
-        p = p + (kid * 10);
-        alert(p)
-    }
-}
+// var kid = window.prompt("Combien d'enfants avec-vous ?")
+
+// if (kid >= 1)
+// {
+//     p = p + kid * 10
+// }
+
+// var sal = window.prompt("Quel est votre salaire")
+// if (sal <= 1200)
+// {
+//     p = p + 10
+// }
+
+// if (p >= 50)
+// {
+//     window.alert("La participation est plafonée à 50%")
+// }
+
+// else {
+//     window.alert("Vous avez le droit à" + " " + p + "%" + " " + "de participation")
+// }
+
+
