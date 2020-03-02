@@ -45,9 +45,9 @@
                 // Instruction BREAK
 
 // cpt = 1;
-// while (cpt<5)     
+// while (cpt<10)     
 // {
-//     if (cpt==4)  
+//     if (cpt==9)  
 //     {  
 //         break;
 //     }  
@@ -57,10 +57,6 @@
 // console.log("fin de la boucle");
 
                 // Boucles avec do ... while
-// do 
-// {      
-//     instructions; 
-// } while (condition);
 
 // var i=0
 // console.log("Table de multiplication par 5");
@@ -74,7 +70,7 @@
 // // instructions exécutées après le for (i vaut 10)
 // console.log("fin de la boucle");
 
-                // Boucles for ... in
+//                 Boucles for ... in
 // var tableau = ["Paul", "Pierre", "Anne", "Sophie"];
 //     for (var i in tableau)   
 // { 
@@ -84,18 +80,38 @@
 
                 // EXERCICE 1
 
-var i=1;
-var pre;
-console.log("Liste de prénoms");
-console.log("==================");
+// var i=1;
+// var pre;
+// console.log("Liste de prénoms");
+// console.log("==================");
 
-while (pre != "" && i <= 10)
+// while (pre != "" && i <= 10)
+// {
+//   pre=window.prompt("Saisissez le prénom" + " " +i)
+//   result = pre
+//   console.log("Prénom"+i+" = "+result);
+
+//   i++
+// } 
+
+// console.log("Fin de la boucle");
+
+                // EXERCICE 2
+
+var n = window.prompt("Saisir nombre")
+console.log("Nombres inférieur à N");
+console.log("================");
+
+do
 {
-  pre=window.prompt("Saisissez le prénom" + " " +i)
-  result = pre
-  console.log("Prénom"+i+" = "+result);
+  resultat = n
+  console.log("Nombre" + " " + resultat)
 
-  i++
-} 
+  n--
+}while ( n >= 0)
+console.log("Fin de la boucle")
 
-console.log("Fin de la boucle");
+
+
+
+
