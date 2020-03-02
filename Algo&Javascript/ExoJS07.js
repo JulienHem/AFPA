@@ -98,14 +98,30 @@
 
                 // EXERCICE 2
 
-var n = window.prompt("Saisir nombre");
-console.log("Nombres inférieur à N");
-console.log("================");
+// var n = window.prompt("Saisir nombre");
+// console.log("Nombres inférieur à N");
+// console.log("================");
 
-do
-{
-  console.log("Nombre" + " " + n)
+// do
+// {
+//   console.log("Nombre" + " " + n)
 
-  n--
-}while ( n >= 0)
-console.log("Fin de la boucle")
+//   n--
+// }while ( n >= 0)
+// console.log("Fin de la boucle")
+
+
+                // EXERCICE 3
+
+var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
+var a = 0
+console.log("Somme des entiers");
+console.log("===================");
+
+do{
+  a = a + n1 ;
+  n1++;
+  console.log(a)
+}while ( n1 < n2);
+console.log("Fin de la boucle");
