@@ -158,5 +158,3 @@
 // else {
 //     window.alert("Vous avez le droit à" + " " + p + "%" + " " + "de participation")
 // }
-
-
