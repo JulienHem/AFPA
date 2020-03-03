@@ -1,4 +1,4 @@
-              // Boucles avec FOR
+// Boucles avec FOR
 
 // console.log("Table de multiplication par 5");
 // console.log("=============================");
@@ -8,31 +8,31 @@
 //     console.log("5 * "+i+" = "+resultat);  
 // }
 // // instructions exécutées après le for (i vaut 10)
-           
+
 // console.log("fin de la boucle");
 
-            // Boucles avec WHILE
+// Boucles avec WHILE
 
-    // var i = 0; 
-    // console.log("Table de multiplication par 5"); 
-    // console.log("=============================");
-         
-    // while (i <= 10)
-    // {   
-    //     // Exécute le calcul et stocke le résultat   
-    //     // dans une variable nommée ‘resultat’  
-    //             resultat = 5 * i
-    //     // A chaque tour, on affiche le résultat courant à l’utilisateur
-    //     console.log("Le résultat de 5 x "+i+" est : "+resultat);
-    
-    //     // A chaque tour, on ajoute +1 à la variable i  
-    //     i++; 
-    // }
-        
-    // // instructions exécutées après le for (i vaut 10)
-    // console.log("fin de la boucle");
+// var i = 0; 
+// console.log("Table de multiplication par 5"); 
+// console.log("=============================");
 
-    	
+// while (i <= 10)
+// {   
+//     // Exécute le calcul et stocke le résultat   
+//     // dans une variable nommée ‘resultat’  
+//             resultat = 5 * i
+//     // A chaque tour, on affiche le résultat courant à l’utilisateur
+//     console.log("Le résultat de 5 x "+i+" est : "+resultat);
+
+//     // A chaque tour, on ajoute +1 à la variable i  
+//     i++; 
+// }
+
+// // instructions exécutées après le for (i vaut 10)
+// console.log("fin de la boucle");
+
+
 // i = 1;
 // while (i <= 10)
 // {
@@ -42,7 +42,7 @@
 //     i++;
 // }       
 
-                // Instruction BREAK
+// Instruction BREAK
 
 // cpt = 1;
 // while (cpt<10)     
@@ -56,7 +56,7 @@
 // }    
 // console.log("fin de la boucle");
 
-                // Boucles avec do ... while
+// Boucles avec do ... while
 
 // var i=0
 // console.log("Table de multiplication par 5");
@@ -78,7 +78,7 @@
 // }
 
 
-                // EXERCICE 1
+// EXERCICE 1
 
 // var i=1;
 // var pre;
@@ -96,7 +96,7 @@
 
 // console.log("Fin de la boucle");
 
-                // EXERCICE 2
+// EXERCICE 2
 
 // var n = window.prompt("Saisir nombre");
 // console.log("Nombres inférieur à N");
@@ -111,17 +111,33 @@
 // console.log("Fin de la boucle")
 
 
-                // EXERCICE 3
+// EXERCICE 3
 
-var n1 = parseInt(window.prompt("Saisir le premier nombre"));
-var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
-var a = 0
-console.log("Somme des entiers");
-console.log("===================");
+// var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+// var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
+// var a = 0
+// console.log("Somme des entiers");
+// console.log("===================");
 
-do{
-  a = a + n1 ;
-  n1++;
-  console.log(a)
-}while ( n1 < n2);
-console.log("Fin de la boucle");
+
+// if (n1 < n2) {
+//   do {
+//     a = a + n1
+//     n1++;
+//     console.log(a)
+//   } while (n1 < n2)
+// }
+// else {
+//   do {
+//     a = a + n2;
+//     n2++;
+//     console.log(a)
+//   } while (n1 > n2);
+// }
+
+// console.log("Fin de la boucle");
+
+                // EXERCICE 4
+
+// var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+// var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
