@@ -176,3 +176,18 @@
 
 // EXERCICE 6
 
+var mot = window.prompt("Rentrez le mot");
+voyelle = 0;
+nb = mot.length
+console.log("Les voyelles");
+console.log("=========================");
+
+do {
+  voyelle = mot.indexOf("a")
+  var mot = mot.substr(voyelle)
+
+  console.log("Nombre de voyelles : " + voyelle)
+
+} while (voyelle != 0)
+
+console.log("Fin de la boucle")
