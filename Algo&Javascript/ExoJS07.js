@@ -140,26 +140,39 @@
 // EXERCICE 4
 
 
-var a = 0
-var m = 0
-console.log("Somme et moyenne");
-console.log("=======================");
+// var a = 0
+// var m = 0
+// console.log("Somme et moyenne");
+// console.log("=======================");
 
-do {
-  var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+// do {
+//   var n1 = parseInt(window.prompt("Saisir le premier nombre"));
 
-  if (n1 == 0) {
-    break;
-  }
+//   if (n1 == 0) {
+//     break;
+//   }
 
-  var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
-  a = n1 + n2
-  console.log("Somme " + + a)
-  m = (n1 + n2) / 2
-  console.log("Moyenne " + m)
+//   a = a + n1
+//   m = (m + n1) / 2
+
+//   console.log(m + "   " + a + "   " + n1)
+// } while (n1 != 0)
+// console.log("Fin de la boucle")
 
 
+// EXERCICE 5
 
-} while (n1 != 0 && n2 != 0)
+// var n = parseInt(window.prompt("Entrez le 1er nombre"))
+// var x = parseInt(window.prompt("Entrez le 2eme nombre"))
+// console.log("Résultats")
+// console.log("======================")
 
-console.log("Fin de la boucle")
+// for (n = 0; n <= 10; n++) {
+
+//   result = n * x
+//   console.log(n + "*" + x + "=" + result)
+// }
+// console.log("Fin de la boucle")
+
+// EXERCICE 6
+
