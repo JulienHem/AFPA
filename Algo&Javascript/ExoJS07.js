@@ -137,7 +137,29 @@
 
 // console.log("Fin de la boucle");
 
-                // EXERCICE 4
+// EXERCICE 4
 
-// var n1 = parseInt(window.prompt("Saisir le premier nombre"));
-// var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
+
+var a = 0
+var m = 0
+console.log("Somme et moyenne");
+console.log("=======================");
+
+do {
+  var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+
+  if (n1 == 0) {
+    break;
+  }
+
+  var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
+  a = n1 + n2
+  console.log("Somme " + + a)
+  m = (n1 + n2) / 2
+  console.log("Moyenne " + m)
+
+
+
+} while (n1 != 0 && n2 != 0)
+
+console.log("Fin de la boucle")
