@@ -208,18 +208,33 @@
 
 // EXERCICE 7
 
-var n = 0
-var result = true;
-var nb = window.prompt("Saisir un nombre");
+// var n = 0
+// var result = true;
+// var nb = window.prompt("Saisir un nombre");
 
-for (n = 2; n < nb; n++) {
-  if (nb % n == 0) 
-  {
-    result = false;
-    alert(nb + " est pas premier "+result)
-    break;
+// for (n = 2; n < nb; n++) {
+//   if (nb % n == 0) 
+//   {
+//     result = false;
+//     alert(nb + " est pas premier "+result)
+//     break;
+//   }
+//   else 
+//   alert(nb + " est premier "+result)
+//   break;
+// }
+
+// EXERCICE 8
+
+var magic = parseInt(Math.random()*100);
+
+do {
+  var num = window.prompt("Cherche le nombre pd");
+  if (num < magic){
+  window.alert("PLUS GRAND")
   }
-  else 
-  alert(nb + " est premier "+result)
-  break;
-}
+  else{
+  window.alert("PLUS PETIT")
+  }
+}while (num != magic)
+window.alert("GG BG")
