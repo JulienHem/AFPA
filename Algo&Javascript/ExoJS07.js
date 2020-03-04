@@ -176,31 +176,50 @@
 
 // EXERCICE 6
 
-var mot = window.prompt("Rentrez le mot");
-var voyelle = 1;
-var comp = 0;
-var temp;
-var tableau = ("aeiouy")
-console.log("Les voyelles");
-console.log("=========================");
+// var mot = window.prompt("Rentrez le mot");
+// var voyelle = 1;
+// var comp = 0;
+// var temp;
+// var tableau = ("aeiouy")
+// console.log("Les voyelles");
+// console.log("=========================");
 
-for (var i in tableau)
-{
-  console.log(tableau[i]);
-  temp = mot 
-  voyelle = 1
+// for (var i in tableau)
+// {
+//   console.log(tableau[i]);
+//   temp = mot 
+//   voyelle = 1
 
-while (voyelle != 0)
-{
-  voyelle = temp.indexOf(tableau[i])
-  voyelle++
-  temp = temp.substr(voyelle)
-  if (voyelle != 0)
+// while (voyelle != 0)
+// {
+//   voyelle = temp.indexOf(tableau[i])
+//   voyelle++
+//   temp = temp.substr(voyelle)
+//   if (voyelle != 0)
+//   {
+//   comp++
+//   }
+// }
+// }
+
+// console.log("Nombre de voyelles " + comp)
+// console.log("Fin de la boucle ")
+
+
+// EXERCICE 7
+
+var n = 0
+var result = true;
+var nb = window.prompt("Saisir un nombre");
+
+for (n = 2; n < nb; n++) {
+  if (nb % n == 0) 
   {
-  comp++
+    result = false;
+    alert(nb + " est pas premier "+result)
+    break;
   }
+  else 
+  alert(nb + " est premier "+result)
+  break;
 }
-}
-
-console.log("Nombre de voyelles " + comp)
-console.log("Fin de la boucle ")
