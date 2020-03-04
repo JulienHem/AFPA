@@ -177,17 +177,30 @@
 // EXERCICE 6
 
 var mot = window.prompt("Rentrez le mot");
-voyelle = 0;
-nb = mot.length
+var voyelle = 1;
+var comp = 0;
+var temp;
+var tableau = ("aeiouy")
 console.log("Les voyelles");
 console.log("=========================");
 
-do {
-  voyelle = mot.indexOf("a")
-  var mot = mot.substr(voyelle)
+for (var i in tableau)
+{
+  console.log(tableau[i]);
+  temp = mot 
+  voyelle = 1
 
-  console.log("Nombre de voyelles : " + voyelle)
+while (voyelle != 0)
+{
+  voyelle = temp.indexOf(tableau[i])
+  voyelle++
+  temp = temp.substr(voyelle)
+  if (voyelle != 0)
+  {
+  comp++
+  }
+}
+}
 
-} while (voyelle != 0)
-
-console.log("Fin de la boucle")
+console.log("Nombre de voyelles " + comp)
+console.log("Fin de la boucle ")
