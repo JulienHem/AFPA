@@ -82,7 +82,6 @@
 // }
 // else 
 // {
-//     age = 2020 - year
 //     window.alert("Il est majeur" +" " + "Il a" + " " + age + "ans")
 // }
 
