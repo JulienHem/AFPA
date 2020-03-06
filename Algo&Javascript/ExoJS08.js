@@ -74,10 +74,10 @@ switch (menu) {
         var mot = window.prompt("Rentrez le mot");
 
         function voyelle(comp){
-        var voyelle = 1;
-        var comp = 0;
-        var temp;
-        var tableau = ("aeiouy")
+            var voyelle = 1;
+            var comp = 0;
+            var temp;
+            var tableau = ("aeiouy")
 
         for (var i in tableau){
             console.log(tableau[i]);
@@ -93,7 +93,8 @@ switch (menu) {
                 comp++
             }
         }
-        document.getElementById("voyelle").innerHTML = "Nombre de voyelles = " + comp
-    }
-}voyelle(comp)
+            document.getElementById("voyelle").innerHTML = "Nombre de voyelles = " + comp
+        }
+        }voyelle(comp)
+        break;
 }     
