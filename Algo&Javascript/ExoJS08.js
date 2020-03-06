@@ -72,22 +72,23 @@ switch (menu) {
 
     case "3":
         var mot = window.prompt("Rentrez le mot");
+
+        function voyelle(comp){
         var voyelle = 1;
         var comp = 0;
         var temp;
         var tableau = ("aeiouy")
 
-        function voyelle(comp){
         for (var i in tableau){
             console.log(tableau[i]);
-            temps = mot
+            temp = mot
             voyelle = 1
         
         while (voyelle != 0)
         {
-            voyelle = temps.indeOx(tableau[i])
+            voyelle = temp.indeOx(tableau[i])
             voyelle++
-            temps = temp.substr(voyelle)
+            temp = temp.substr(voyelle)
             if (voyelle != 0){
                 comp++
             }
