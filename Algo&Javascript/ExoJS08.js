@@ -32,6 +32,42 @@
 
 
 // EXERCICE 3
+function result(n, x) {
+    document.getElementById("resultat").innerHTML = "Resultat = " + x * n
+}
+
+function moyenne(a, m) {
+    do {
+        var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+        if (n1 == 0) {
+            break;
+        }
+        a = a + n1
+        m = (m + n1) / 2
+
+        document.getElementById("moyenne").innerHTML = "Moyenne = " + m + "\n" + " Somme total : " + a
+    } while (n1 != 0)
+}
+
+
+function voyelle(mot) {
+    var nbVoyelle = 0;
+    var i = 0;
+    for (i = 0; i < mot.length; i++) {
+        if ((mot[i] == "a") || (mot[i] == "e") || (mot[i] == "i") || (mot[i] == "o") || (mot[i] == "u") || (mot[i] == "y")) {
+            nbVoyelle++;
+        }
+    }
+    console.log(mot + "Contient " + nbVoyelle + " voyelle(s) " + "et " + (mot.length - nbVoyelle) + " consonne(s)")
+
+    document.getElementById("voyelle").innerHTML = " Contient " + nbVoyelle + " voyelle(s) " + "et " + (mot.length - nbVoyelle) + " consonne(s)"
+}
+
+function lafonction(mot, lettre) {
+    mot2 = mot.split(lettre);
+    compteur = mot2.length - 1;
+    return compteur;
+}
 
 var menu = window.prompt("Choisir le script" + "\n" + "1- Multiples" + "\n" + "2- Somme et moyenne" + "\n" + "3- Recherche du nombre de voyelles" + "\n" + "4- Recherche du nombre des caractères suivants" + "\n" + "Entrez votre choix : ")
 
@@ -40,61 +76,22 @@ switch (menu) {
         var n = parseInt(window.prompt("Entrez le 1er nombre"))
         var x = parseInt(window.prompt("Entrez le 2eme nombre"))
 
-        function result(n, x) {
-            for (n = 0; n <= x; n++) {
-                document.getElementById("resultat").innerHTML = "Resultat = " + x * n
-            }
-        } result(x, n)
+        result(x, n)
         break;
 
     case "2":
-        var n = parseInt(window.prompt("Saisir le premier nombre"))
-        var a = n
-        var m = n
-
-        function moyenne(a, m) {
-            do {
-                var n1 = parseInt(window.prompt("Saisir le second nombre"))
-
-                if (n1 == 0) {
-                    break;
-                }
-
-                a = a + n1
-                m = (m + n1) / 2
-                document.getElementById("moyenne").innerHTML = "Moyenne = " + m + "\n" + " Somme total : " + a
-
-            } while (n1 != 0)
-
-        }
+        var a = 0
+        var m = 0
         moyenne(a, m)
         break;
 
     case "3":
-        var mot = window.prompt("Rentrez le mot");
-
-        function voyelle(comp){
-            var voyelle = 1;
-            var comp = 0;
-            var temp;
-            var tableau = ("aeiouy")
-
-        for (var i in tableau){
-            console.log(tableau[i]);
-            temp = mot
-            voyelle = 1
-        
-        while (voyelle != 0)
-        {
-            voyelle = temp.indeOx(tableau[i])
-            voyelle++
-            temp = temp.substr(voyelle)
-            if (voyelle != 0){
-                comp++
-            }
-        }
-            document.getElementById("voyelle").innerHTML = "Nombre de voyelles = " + comp
-        }
-        }voyelle(comp)
+        var mot = prompt("Veuillez saisir un mot")
+        voyelle(mot)
         break;
-}     
+
+    case "4":
+        var mot = window.prompt("Entrez un mot")
+        var lettre = window.prompt("Entrez une lettre")
+        alert(lafonction(mot, lettre));
+}

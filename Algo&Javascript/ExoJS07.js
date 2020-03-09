@@ -176,35 +176,15 @@
 
 // EXERCICE 6
 
-// var mot = window.prompt("Rentrez le mot");
-// var voyelle = 1;
-// var comp = 0;
-// var temp;
-// var tableau = ("aeiouy")
-// console.log("Les voyelles");
-// console.log("=========================");
-
-// for (var i in tableau)
-// {
-//   console.log(tableau[i]);
-//   temp = mot 
-//   voyelle = 1
-
-// while (voyelle != 0)
-// {
-//   voyelle = temp.indexOf(tableau[i])
-//   voyelle++
-//   temp = temp.substr(voyelle)
-//   if (voyelle != 0)
-//   {
-//   comp++
-//   }
+// var mot = prompt("Veuillez saisir un mot")
+// var nbVoyelle = 0;
+// var i = 0;
+// for (i = 0; i < mot.length; i++) {
+//     if ((mot[i]=="a")||(mot[i]=="e")||(mot[i]=="i")||(mot[i]=="o")||(mot[i]=="u")||(mot[i]=="y")) {
+//         nbVoyelle++;
+//     }
 // }
-// }
-
-// console.log("Nombre de voyelles " + comp)
-// console.log("Fin de la boucle ")
-
+// console.log(mot + " contient " + nbVoyelle + " voyelle(s) " + "et "+ (mot.length - nbVoyelle) + " consonne(s)")
 
 // EXERCICE 7
 
