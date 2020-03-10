@@ -93,8 +93,8 @@
 //     case "4":
 //         var mot = window.prompt("Entrez un mot")
 //         var lettre = window.prompt("Entrez une lettre")
-//         alert(lafonction(mot, lettre));
-}
+// //         alert(lafonction(mot, lettre));
+// }
 
 // EXERCICE 4 
 // var str1 = window.prompt("Saisir la suite de caractères");
@@ -107,3 +107,4 @@
 // window.alert(result [n])
 
 // }strtok(str1, str2 , n)
+
