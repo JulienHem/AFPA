@@ -45,16 +45,27 @@ function InfoTab() { // Maxi et moyenne des postes
     console.log(tableau.length)
 }
 
-
-
 GetInteger()
 
 InitTab()
 
 SaisieTab()
 
-AfficheTab()
 
-RechercheTab()
+do {
+var menu = prompt("Afficher les postes du tableau : " + "\n" + "Afficher le contenu du tableau : " + "\n" + "Maxi et moyenne des postes : " + "\n" + "Annuler");
 
-InfoTab()
+switch (menu){
+    case "1" :
+    AfficheTab()
+    break;
+    case "2" :
+    RechercheTab()
+    break;
+    case "3" :
+    InfoTab()
+    break;
+    case "4" : 
+    break;
+}
+}while (menu != "4")
