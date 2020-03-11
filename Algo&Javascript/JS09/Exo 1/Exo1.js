@@ -7,3 +7,5 @@ for (i = 0; i<tableau.length; i++){
 tableau[i] = (window.prompt("Entrez votre valeur"));
 alert(tableau)
 }
+
+console.log(tableau)

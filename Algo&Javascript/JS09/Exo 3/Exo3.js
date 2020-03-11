@@ -1,4 +1,4 @@
-function tri (tabl){
+function tri (tabl){ // Permet de faire le tri
     do {
         changed = false;
         for (i = 0; i < nb -1; i++){
