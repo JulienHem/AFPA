@@ -53,7 +53,7 @@ SaisieTab()
 
 
 do {
-var menu = prompt("Afficher les postes du tableau : " + "\n" + "Afficher le contenu du tableau : " + "\n" + "Maxi et moyenne des postes : " + "\n" + "Annuler");
+var menu = prompt("Afficher les postes du tableau : " + "\n" + "Choisissez le contenu que vous voulez : " + "\n" + "Maxi et moyenne des postes : " + "\n" + "Annuler");
 
 switch (menu){
     case "1" :
