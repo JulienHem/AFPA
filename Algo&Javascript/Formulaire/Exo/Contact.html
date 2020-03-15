@@ -8,18 +8,17 @@
 <body>
     <h1> Vos coordonnées : </h1>
     <b><h2 id="h"> <span class="patrick">*</span>Ces zones sont obligatoires pour envoyer le formulaire.</h2>
-    <script src="contact.js"></script>
     <form id="form" name="form" method="post">
-        <label for="societe" class="uncara">Société : </label><input type="text" name="societe" value="" ><span class="patrick"> *</span><br><br>
-        <label for="personne" class="uncara">Personne à contacter : </label><input type="text" name="personne" value="" ><span class="patrick"> *</span><br><br>
+        <label for="societe">Société : </label><input type="text" name="societe" value="" id="societe" ><span class="patrick"> *</span><br><br>
+        <label for="personne" >Personne à contacter : </label><input type="text" name="personne" value="" id="contact"><span class="patrick"> *</span><br><br>
         <label for="adresse">Adresse de l'entreprise : </label><textarea name="adresse" rows="4" cols="50" value="" ></textarea><span class="patrick"> *</span><br><br>
-        <label for="codepost">Code Postal : </label><input type="text" name="codepost" value="" ><span class="patrick"> *</span><br><br>
-        <label for="ville" class="uncara">Ville : </label><input type="text" name="ville" value="" ><span class="patrick"> *</span><br><br>
-        <label for="mail">E-Mail : </label><input type="text" name="mail" value="" ><span class="patrick"> *</span><br><br>
+        <label for="codepost">Code Postal : </label><input type="text" name="codepost" value="" id="cp"><span class="patrick"> *</span><br><br>
+        <label for="ville" >Ville : </label><input type="text" name="ville" value="" id="ville"><span class="patrick"> *</span><br><br>
+        <label for="mail">E-Mail : </label><input type="email" name="email" value="" id="mail" ><span class="patrick"> *</span><br><br>
         <label for="tel">Téléphone : </label><input type="text" name="tel" value=""><br><br>
         <label for="enviro">Sélectionnez l'environnement technique du projet : </label><br>
         <select name="enviro">
-            <option value="Choisissez">Choisissez</option>
+            <option value="Choisissez" name="choisissez">Choisissez</option>
             <option value="Access">Access</option>
             <option value="Java">Java</option>
             <option value="Delphi">Delphi</option>
@@ -35,10 +34,11 @@
             <option value="autres">Autres...</option>
         </select>
         <textarea name="enviro" rows="4" cols="50" value=""></textarea><br><br>
-        <button type="submit" id="button1">Envoyer</button>
+        <input type="submit" id="button1" value="Envoyer">
         <input type="reset" value="Effacer">
         
     </form>
+    <script src="contact.js"></script>
 </body>
 </html>
 
