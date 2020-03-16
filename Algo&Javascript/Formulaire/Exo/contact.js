@@ -7,7 +7,7 @@ function verification() {
     var filtre2 = new RegExp("^[a-z0-9A-Z -@]+$")
     var resultat2 = filtre2.test(uncara)
     if(resultat2 === false){
-        alert("Rentrez un nom de société correct")
+        alert("Rentrez un nom de société correct-+-")
     }
     else 
     { }

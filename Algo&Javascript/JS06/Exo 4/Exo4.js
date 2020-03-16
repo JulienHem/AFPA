@@ -14,7 +14,7 @@ else
     p = 20
 }
 
-var kid = window.prompt("Combien d'enfants avec-vous ?")
+var kid = window.prompt("Combien d'enfants avez-vous ?")
 
 if (kid >= 1)
 {
