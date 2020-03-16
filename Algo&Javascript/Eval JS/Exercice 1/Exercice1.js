@@ -4,19 +4,6 @@ var qte = parseFloat(prompt("Saisir la quantité commandée"));
 var tot = parseFloat(pu * qte);
 
 // La variable TOT va ici permettre de comparer sa valeur
-if (tot > 500){
-    alert("Les frais de port sont gratuits !")
-}
-else { // Ce else va permettre de calculer les frais de port avec la condition du minimum de 6€
-    alert("Vous avez 6€ de frais de port minimum");
-    var port = parseFloat(tot * (2 / 100))
-    alert("Le port est de " + port +"€")
-    console.log(port)
-        if (port < 6){
-            port = 6
-            alert("Les frais de port sont obligatoirement de 6 euros")
-        }
-}
 
 if (tot >= 100 && tot <= 200){ // Ici la condition permet de calculer la remise si le prix est entre 100 et 200 euros
     var r1 = parseFloat(tot * (1 - 5 / 100));
@@ -26,6 +13,20 @@ if (tot >= 100 && tot <= 200){ // Ici la condition permet de calculer la remise 
 else {
     var r2 = parseFloat(tot * (1 - 10 / 100));
     var remise2 = alert("Vous avez une remise de 10%")
+}
+
+if (tot > 500){
+    alert("Les frais de port sont gratuits !")
+}
+else { // Ce else va permettre de calculer les frais de port avec la condition du minimum de 6€
+    alert("Vous avez 6€ de frais de port minimum");
+    var port = parseFloat(tot * (2 / 100))
+    alert("Les frais de port sont de " + port +"€")
+    console.log(port)
+        if (port < 6){
+            port = 6
+            alert("Les frais de port sont obligatoirement de 6 euros")
+        }
 }
 console.log(tot)
 console.log(somme)
