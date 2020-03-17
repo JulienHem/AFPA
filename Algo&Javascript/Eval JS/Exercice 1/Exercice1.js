@@ -19,9 +19,9 @@ if (tot > 500){
     alert("Les frais de port sont gratuits !")
 }
 else { // Ce else va permettre de calculer les frais de port avec la condition du minimum de 6€
-    alert("Vous avez 6€ de frais de port minimum");
     var port = parseFloat(tot * (2 / 100))
     alert("Les frais de port sont de " + port +"€")
+    alert("Vous avez 6€ de frais de port minimum");
     console.log(port)
         if (port < 6){
             port = 6
