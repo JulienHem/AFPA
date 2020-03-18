@@ -10,7 +10,7 @@ var tab = []; // On crée un tableau
   var min = Math.min(...tab) // Cherche le minimum dans le tableau
   var max = Math.max(...tab) // Cherche le max dans le tableau
 
-window.alert("Le maximum est : " + max + " le minimum est : " + min)
+alert("Le maximum est : " + max + " le minimum est : " + min)
 
 
 
