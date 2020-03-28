@@ -45,3 +45,15 @@ SELECT nodep, COUNT(*) FROM employe GROUP BY nodep HAVING COUNT(*) > 3
 -- 4.Afficher les lettres qui sont l'initialed'au moins trois employés.
 
 SELECT SUBSTR(nom,1,1) AS Initial1, SUBSTR(prenom,1,1) AS Initial2 FROM employe GROUP BY Initial1, Initial2 HAVING (COUNT(Initial1) >= 3 AND COUNT(Initial2) >= 3)
+
+-- Rechercher les titres et la moyenne des salaires par titre dont la moyenne est supérieure à la moyenne des salaires des Représentants.
+
+SELECT titre, AVG(salaire) AS salairemoyenne FROM employe GROUP BY titre HAVING salairemoyenne >= (SELECT AVG(salaire) FROM employe WHERE titre="representant")
+
+-- 17
+SELECT sta_nom, AVG(res_date_fin - res_date_debut)
+FROM station 
+INNER JOIN hotel ON station.sta_id = hotel.hot_sta_id
+INNER JOIN chambre ON hotel.hot_id = chambre.cha_hot_id
+INNER JOIN reservation ON chambre.cha_id = reservation.res_cha_id
+GROUP BY sta_nom
