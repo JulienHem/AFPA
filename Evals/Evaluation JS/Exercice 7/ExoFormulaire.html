@@ -75,9 +75,9 @@
           <form>
             <div class="form-group">
               <legend>Vos Coordonnées</legend>
-              <label for="Nom">Nom*</label><input type="nom" class="form-control" name="nom" id="name" >
-              <label for="prenom">Prénom*</label><input type="prenom" class="form-control" name="prenom" id="pren"><br>
-              <label for="sexe">Sexe*</label>
+              <label for="Nom">Nom*</label><input type="nom" class="form-control" name="nom" id="name"><p id="name-error"></p>
+              <label for="prenom">Prénom*</label><input type="prenom" class="form-control" name="prenom" id="pren"><p id="prenom-error"></p>
+              <label for="sexe">Sexe*</label><p id="sexe-error"></p>
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-outline-primary">
@@ -86,15 +86,15 @@
               <label class="btn btn-outline-primary active">
                 <input type="radio" name="options" id="radio-option-2" autocomplete="off" required>Masculin
               </label>
-            </div>
+            </div><br>
           
             <div class="form-group">
-              <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA"><br>
-              <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000"><br>
-              <label for="adresse">Adresse</label><input type="text" name="adresse" class="form-control" id="adress"><br>
-              <label for="ville">Ville</label><input type="text" name="ville" class="form-control" id="city"><br>
+              <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA"><p id="ddn-error"></p>
+              <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000"><p id="codepost-error"></p>
+              <label for="adresse">Adresse</label><input type="text" name="adresse" class="form-control" id="adress"><p id="adress-error"></p>
+              <label for="ville">Ville</label><input type="text" name="ville" class="form-control" id="city">
               <label for="email">Email* </label><input type="text" name="email" class="form-control"
-                placeholder="ex : comment.va@gmail.com" id="mail" ><br>
+                placeholder="ex : comment.va@gmail.com" id="mail" ><p id="mail-error"></p>
             </div>
             <legend>Votre demande</legend>
               <div class="form-group">
@@ -106,16 +106,17 @@
                   <option>Autres</option>
                 </select>
               </div>
-            </select><br>
+            </select>
             <div class="form-group">
               <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" id="question" placeholder="Pas plus de 500 caractères"
                 ></textarea>
+                <p id="question-error"></p>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="Acceptation">
               <label class="form-check-label" for="Acceptation" required>J'accepte le traitement informatique de ce
                 formulaire.</label><br>
-              </div>
+              </div><br>
               <button type="submit" class="btn btn-primary" id="send">Envoyer</button>
               <button type="reset" class="btn btn-primary" >Annuler</button>
             </form>
