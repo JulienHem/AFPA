@@ -26,7 +26,7 @@ tabverif.push(check("question", "question-error", "^(.|\n){5,500}$", "Vous ne po
 
 for (i = 0; i < tabverif.length; i++){ // Permet la vérification dans le tableau grâce à sa longueur
     if (tabverif[i] === false)
-    return false; // Si il y'a une erreur cela va afficher les erreurs
+    return false; // Si il y'a une erreur cela va les afficher
     else {
         return true; // Si tout est bon le formulaire est envoyé
     }
