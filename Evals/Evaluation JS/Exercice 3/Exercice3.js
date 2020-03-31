@@ -6,7 +6,7 @@ var tab = []; // On crée un tableau
     }
     else { }
   }
-  console.log(tab)
+  alert(tab)
   var min = Math.min(...tab) // Cherche le minimum dans le tableau
   var max = Math.max(...tab) // Cherche le max dans le tableau
 
