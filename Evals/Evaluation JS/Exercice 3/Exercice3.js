@@ -11,9 +11,3 @@ var tab = []; // On crée un tableau
   var max = Math.max(...tab) // Cherche le max dans le tableau
 
 alert("Le maximum est : " + max + " le minimum est : " + min)
-
-
-
-
-
-

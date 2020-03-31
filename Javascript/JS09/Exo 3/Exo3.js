@@ -3,7 +3,7 @@ function tri (tabl){ // Permet de faire le tri
         changed = false;
         for (i = 0; i < nb -1; i++){
             if (tabl[i] > tabl[i + 1]){
-            tampon = tabl[i + 1]
+            var tampon = tabl[i + 1]
             tabl[i + 1] = tabl[i]
             tabl[i] = tampon
             changed = true;
@@ -14,7 +14,6 @@ function tri (tabl){ // Permet de faire le tri
 
 var tabl = new Array(parseInt(prompt("Saisissez le nombre de colonne : ")))
 var nb = tabl.length
-var tampon;
 for (i = 0; i < nb; i++){
 tabl[i] = parseInt(prompt("Saisissez vos numéros :" ))
 console.log(tabl)

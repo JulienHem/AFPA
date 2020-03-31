@@ -1,8 +1,6 @@
 // On rentre les 2 valeurs qui nous donnerons la somme
 var n = parseInt(prompt("Insérez votre votre chiffre"));
 var c = parseInt(prompt("Insérez votre second chiffre"))
-console.log("Somme des nombres inférieur à N");
-console.log("=========================");
 
 do {
     var result = n + c // Calcul de la somme de n et c
