@@ -16,6 +16,6 @@ do {
     }
     else { }
 
-}while(age <= 100) // La boucle s'arrête si on saisit 100 ou +
+}while(age <= 101) // La boucle s'arrête si on saisit 100 ou +
 alert("Il y'a " + j + " de personnes de moins de 20 ans, " + m + " personnes entre 20 et 40 "
 + v + " personne de plus de 40 ans")

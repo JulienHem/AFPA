@@ -11,7 +11,20 @@ function check(id, iderror, regex, errorMsg) { // Permet de centraliser les vari
     }
 }
 
-function verification() { // On rentre chaque arguments pour afficher un message d'erreurs
+function checkSelect(iderror, errorMsg) {
+    var menuselect = document.getElementById("Menu")
+    var empty = document.getElementById("Empty").value
+    var iderrorSelect = document.getElementById(iderror)
+    if (menuselect === empty) { 
+        return true;
+    } else {
+        iderrorSelect.textcontent = errorMsg;
+        iderrorSelect.style.color = "red";
+        return false;
+    }
+}
+
+function verification() { // Appelle de la fonction pour commencer la vérification des données entrées dans les champs
 
 var tabverif = [] // On rentre toutes les valeurs dans ce tableau pour les vérifier une à une
 
@@ -22,7 +35,8 @@ tabverif.push(check("codepost", "codepost-error", "^[0-9]{5}$", "Veuillez rentre
 tabverif.push(check("adress", "adress-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une adresse valable"))
 tabverif.push(check("city", "ville-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une ville valable"))
 tabverif.push(check("mail", "mail-error","^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", "Veuillez rentrer un mail valable"))
-tabverif.push(check("question", "question-error", "^(.|\n){5,500}$", "Vous ne pouvez dépasser 500 caractères"))
+tabverif.push(check("question", "question-error", "^(.|\n){5,500}$", "Vous devez entrez au moins 5 caractères et vous ne pouvez dépasser 500 caractères"))
+tabverif.push(checkSelect("menu-error", "Vous devez sélectionner votre demande"))
 
 for (i = 0; i < tabverif.length; i++){ // Permet la vérification dans le tableau grâce à sa longueur
     if (tabverif[i] === false)
@@ -43,3 +57,7 @@ verif.addEventListener("click", function (event) {
     }
 
 });
+
+
+
+

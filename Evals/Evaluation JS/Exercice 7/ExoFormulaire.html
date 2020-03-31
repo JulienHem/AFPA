@@ -98,14 +98,18 @@
             </div>
             <legend>Votre demande</legend>
               <div class="form-group">
-                <label for="examplecontrolselec1">Sujet</label>
-                <select class="form-control" id="exampleformcontrolselect1">
-                  <option>Mes commandes</option>
-                  <option>Question sur un produit</option>
-                  <option>Réclamation</option>
-                  <option>Autres</option>
+                <label for="examplecontrolselec1">Sujet*</label>
+                <select class="form-control" id="menu">
+                <option value="empty" id="empty">--------</option>
+                <option value="commande">Commande</option>
+                <option value="elon">Besoin de skill</option>
+                <option value="tesla">Acheter un stick arcade</option>
+                <option value="spacex">Une nouvelle souris</option>
+                <option value="stage">Proposition de stage</option> 
                 </select>
+                <p id="menu-error"></p>
               </div>
+              
             </select>
             <div class="form-group">
               <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" id="question" placeholder="Pas plus de 500 caractères"

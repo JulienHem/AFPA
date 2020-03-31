@@ -1,13 +1,20 @@
-var tab = []; // On crée un tableau
-  while (nb != 0) { // Permet de rentrer dans la boucle pour entrer les valeurs
-    var nb = parseInt(window.prompt("Saisir la valeur")); 
-    if (nb != 0) { // Si on rentre la valeur "0" le script s'arrête
-      tab.push(nb)
-    }
-    else { }
-  }
-  alert(tab)
-  var min = Math.min(...tab) // Cherche le minimum dans le tableau
-  var max = Math.max(...tab) // Cherche le max dans le tableau
+var nb = parseInt(prompt("Saisir la valeur et entrez 0 pour arrêter")); // Saisie des valeurs MAX et MIN
+var max = nb;
+var min = nb;
 
-alert("Le maximum est : " + max + " le minimum est : " + min)
+while (nb != 0) { // Permet d'arrêter le script à l'insertion de 0
+
+var nb = parseInt(prompt("Saisir la valeur et entrez 0 pour arrêter")); // Permet de continuer la saisie des valeurs
+
+  if (nb > max){ // On définit le MAX
+    max = nb;
+  }
+
+  else if (nb < min){ // Défini le MIN
+    if (nb != 0){ // Permet de ne pas entrer 0 à son insertion
+      min = nb;
+  }
+}
+
+};
+alert("Le maximum est : " + max + " et le minimum est : " + min);
