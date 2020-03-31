@@ -72,7 +72,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-8">
           <p>*Ces zones sont obligatoires</p>
-          <form>
+          <form id="formulaire">
             <div class="form-group">
               <legend>Vos Coordonnées</legend>
               <label for="Nom">Nom*</label><input type="nom" class="form-control" name="nom" id="name"><p id="name-error"></p>
@@ -91,8 +91,8 @@
             <div class="form-group">
               <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA"><p id="ddn-error"></p>
               <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000"><p id="codepost-error"></p>
-              <label for="adresse">Adresse</label><input type="text" name="adresse" class="form-control" id="adress"><p id="adress-error"></p>
-              <label for="ville">Ville</label><input type="text" name="ville" class="form-control" id="city">
+              <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress"><p id="adress-error"></p>
+              <label for="ville">Ville*</label><input type="text" name="ville" class="form-control" id="city"><p id="ville-error"></p>
               <label for="email">Email* </label><input type="text" name="email" class="form-control"
                 placeholder="ex : comment.va@gmail.com" id="mail" ><p id="mail-error"></p>
             </div>
@@ -110,14 +110,14 @@
             <div class="form-group">
               <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" id="question" placeholder="Pas plus de 500 caractères"
                 ></textarea>
-                <p id="question-error"></p>
             </div>
+            <p id="question-error"></p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="Acceptation">
               <label class="form-check-label" for="Acceptation" required>J'accepte le traitement informatique de ce
                 formulaire.</label><br>
               </div><br>
-              <button type="submit" class="btn btn-primary" id="send">Envoyer</button>
+              <button class="btn btn-primary" id="send">Envoyer</button>
               <button type="reset" class="btn btn-primary" >Annuler</button>
             </form>
         </div>
