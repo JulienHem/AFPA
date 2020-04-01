@@ -6,7 +6,7 @@ while (nb != 0) { // Permet d'arrêter le script à l'insertion de 0
 
 var nb = parseInt(prompt("Saisir la valeur et entrez 0 pour arrêter")); // Permet de continuer la saisie des valeurs
 
-  if (nb > max){ // On définit le MAX
+  if (nb > max){ // Défini le MAX
     max = nb;
   }
 
