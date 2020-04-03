@@ -3,10 +3,9 @@ function check(id, iderror, regex, errorMsg) { // Permet de centraliser les vari
     var idError = document.getElementById(iderror);
     var filtre = new RegExp(regex);
     if (filtre.test(idObj)) {
-        // Enlever les erreurs
         return true;
     } else {
-        idError.textContent = errorMsg; 
+        idError.textContent = errorMsg;
         idError.style.color = "red";
         return false;
     }
@@ -16,7 +15,7 @@ function check(id, iderror, regex, errorMsg) { // Permet de centraliser les vari
 function checkSelect(iderror, errorMsg) {
     var menuselect = document.getElementById("menu").value;
     var iderrorSelect = document.getElementById(iderror);
-    if (menuselect !== "empty"){
+    if (menuselect !== "empty") {
         return true;
     } else {
         iderrorSelect.textContent = errorMsg;
@@ -25,42 +24,71 @@ function checkSelect(iderror, errorMsg) {
     }
 }
 
-function verification() { // Appelle de la fonction pour commencer la vérification des données entrées dans les champs
-    
-var tabverif = [] // On rentre toutes les valeurs dans ce tableau pour les vérifier une à une
+function tempsreel() {
 
-tabverif.push(check("name", "name-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Vous devez rentrer minimum un caractère"))
-tabverif.push(check("pren", "prenom-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Veuillez rentrer un prénom valable"))
-tabverif.push(check("ddn", "ddn-error", "^[0-9]{2}?\/[0-9]{2}?\/([0-9]{4})+$", "Veuillez rentrer une date de naissance correcte"))
-tabverif.push(check("codepost", "codepost-error", "^[0-9]{5}$", "Veuillez rentrer un code postal correct"))
-tabverif.push(check("adress", "adress-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une adresse valable"))
-tabverif.push(check("city", "ville-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une ville valable"))
-tabverif.push(check("mail", "mail-error","^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", "Veuillez rentrer un mail valable"))
-tabverif.push(check("question", "question-error", "^(.|\n){5,500}$", "Vous devez entrez au moins 5 caractères et vous ne pouvez dépasser 500 caractères"))
-tabverif.push(checkSelect("menu-error", "Vous devez sélectionner votre demande"))
-console.log(tabverif)
-
-var sortie = true;
-
-for (i = 0; i < tabverif.length; i++){ // Permet la vérification dans le tableau grâce à sa longueur
-    console.log(tabverif[i])
-    if (tabverif[i] === false)
-    sortie = false; // Si il y'a une erreur cela va les afficher
+    verification()
 }
-    return sortie;
+
+function verification(laverif) { // Appelle de la fonction pour commencer la vérification des données entrées dans les champs
+
+    if (laverif == event) {
+
+        var tabverif = [] // On rentre toutes les valeurs dans ce tableau pour les vérifier une à une
+
+
+        tabverif.push(check("name", "name-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Vous devez rentrer minimum un caractère"));
+        tabverif.push(check("pren", "prenom-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Veuillez rentrer un prénom valable"));
+        tabverif.push(check("ddn", "ddn-error", "^[0-9]{2}?\/[0-9]{2}?\/([0-9]{4})+$", "Veuillez rentrer une date de naissance correcte"));
+        tabverif.push(check("codepost", "codepost-error", "^[0-9]{5}$", "Veuillez rentrer un code postal correct"));
+        tabverif.push(check("adress", "adress-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une adresse valable"));
+        tabverif.push(check("city", "ville-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une ville valable"));
+        tabverif.push(check("mail", "mail-error", "^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", "Veuillez rentrer un mail valable"));
+        tabverif.push(check("question", "question-error", "^(.|\n){5,500}$", "Vous devez entrez au moins 5 caractères et vous ne pouvez dépasser 500 caractères"));
+        tabverif.push(checkSelect("menu-error", "Vous devez sélectionner votre demande"));
+
+        var sortie = true;
+
+        for (i = 0; i < tabverif.length; i++); { // Permet la vérification dans le tableau grâce à sa longueur
+            console.log(tabverif[i]);
+            if (tabverif[i] === false);
+            sortie = false; // Si il y'a une erreur cela va les afficher
+        }
+        return sortie;
+    }
+    else {
+        var tabverif = [] // On rentre toutes les valeurs dans ce tableau pour les vérifier une à une
+        tabverif.push(check("name", "name-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Vous devez rentrer minimum un caractère"));
+        tabverif.push(check("pren", "prenom-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Veuillez rentrer un prénom valable"));
+        tabverif.push(check("ddn", "ddn-error", "^[0-9]{2}?\/[0-9]{2}?\/([0-9]{4})+$", "Veuillez rentrer une date de naissance correcte"));
+        tabverif.push(check("codepost", "codepost-error", "^[0-9]{5}$", "Veuillez rentrer un code postal correct"));
+        tabverif.push(check("adress", "adress-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une adresse valable"));
+        tabverif.push(check("city", "ville-error", "^[0-9]*[a-zA-Z- éàèêûî]+$", "Veuillez rentrer une ville valable"));
+        tabverif.push(check("mail", "mail-error", "^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", "Veuillez rentrer un mail valable"));
+        tabverif.push(check("question", "question-error", "^(.|\n){5,500}$", "Vous devez entrez au moins 5 caractères et vous ne pouvez dépasser 500 caractères"));
+        tabverif.push(checkSelect("menu-error", "Vous devez sélectionner votre demande"));
+        console.log(tabverif)
+
+        var instant = true;
+        $("input, textarea").on("change", function () {
+            var getID = $(this).attr('id');
+            for (i = 0; i < tabverif.length; i++) {
+                if (getID === false) {
+                }
+                else {
+                    return instant;
+                }
+            }
+        });
+    }
 }
+
 
 //  Lance la vérification au clique de "Envoyer" du formulaire
 var verif = document.getElementById("send")
 verif.addEventListener("click", function (event) {
     event.preventDefault()
-    if (verification(event))
-    {
+    if (verification(event)) {
         document.getElementById("formulaire").submit()
     }
 
 });
-
-
-
-

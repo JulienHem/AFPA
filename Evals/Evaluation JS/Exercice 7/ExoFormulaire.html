@@ -50,8 +50,7 @@
                   <a class="nav-link disabled" href="ExoFormulaire.html">Formulaire</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+             
               </form>
             </div>
           </nav>
@@ -75,8 +74,8 @@
           <form id="formulaire">
             <div class="form-group">
               <legend>Vos Coordonnées</legend>
-              <label for="Nom">Nom*</label><input type="nom" class="form-control" name="nom" id="name"><p id="name-error"></p>
-              <label for="prenom">Prénom*</label><input type="prenom" class="form-control" name="prenom" id="pren"><p id="prenom-error"></p>
+              <label for="Nom">Nom*</label><input type="nom" class="form-control" name="nom" id="name" onKeyUp="tempsreel()"><p id="name-error"></p>
+              <label for="prenom">Prénom*</label><input type="prenom" class="form-control" name="prenom" id="pren" onKeyUp="tempsreel()"><p id="prenom-error"></p>
               <label for="sexe">Sexe*</label><p id="sexe-error"></p>
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -89,12 +88,12 @@
             </div><br>
           
             <div class="form-group">
-              <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA"><p id="ddn-error"></p>
-              <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000"><p id="codepost-error"></p>
-              <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress"><p id="adress-error"></p>
-              <label for="ville">Ville*</label><input type="text" name="ville" class="form-control" id="city"><p id="ville-error"></p>
+              <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA" onKeyUp="tempsreel()"><p id="ddn-error"></p>
+              <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000" onKeyUp="tempsreel()"><p id="codepost-error"></p>
+              <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress" onKeyUp="tempsreel(evnt)"><p id="adress-error"></p>
+              <label for="ville">Ville*</label><input type="text" name="ville" class="form-control" id="city" onKeyUp="tempsreel()"><p id="ville-error"></p>
               <label for="email">Email* </label><input type="text" name="email" class="form-control"
-                placeholder="ex : comment.va@gmail.com" id="mail" ><p id="mail-error"></p>
+                placeholder="ex : comment.va@gmail.com" id="mail" onKeyUp="tempsreel(event)" ><p id="mail-error"></p>
             </div>
             <legend>Votre demande</legend>
               <div class="form-group">
@@ -110,7 +109,7 @@
               </div>
               <p id="menu-error"></p>
             <div class="form-group">
-              <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" id="question" placeholder="Pas plus de 500 caractères"
+              <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" id="question" onKeyUp="tempsreel()" placeholder="Pas plus de 500 caractères"
                 ></textarea>
             </div>
             <p id="question-error"></p>
@@ -168,8 +167,6 @@
                     <a class="nav-link disabled" href="#">Plan du site</a>
                   </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 </form>
               </div>
             </nav>
