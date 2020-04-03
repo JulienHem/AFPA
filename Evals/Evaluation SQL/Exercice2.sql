@@ -1,6 +1,6 @@
 -- 1 -Liste des contacts français:
 
-SELECT CompanyName, ContactName, ContactTitle, Phone
+SELECT CompanyName AS Société, ContactName AS Contact, ContactTitle AS Fonction, Phone AS "Numéro de téléphone"
 FROM Customers
 WHERE Country = "France";
 
@@ -19,7 +19,7 @@ JOIN Products
 ON Products.SupplierID = Suppliers.SupplierID
 WHERE Country = "France"
 GROUP BY CompanyName
-ORDER BY COUNT(ProductID) DESC;
+ORDER BY CompanyName ASC, COUNT(ProductID) DESC;
 
 -- 4 -Liste des clients Français ayant plus de 10 commandes:
 
@@ -60,7 +60,7 @@ WHERE YEAR(OrderDate) = "1997";
 
 -- 8 –Montant des ventes de 1997 mois par mois:
 
-SELECT MONTH(OrderDate) AS "Mois 97", SUM(UnitPrice*Quantity) AS "Montant Ventes"
+SELECT MONTH(OrderDate) AS "Mois 97", SUM(UnitPrice*Quantity) AS "Montant Ventes 97"
 FROM Orders
 JOIN `Order Details` ON Orders.OrderID = `Order Details`.OrderID
 WHERE YEAR(OrderDate) = "1997"
@@ -75,7 +75,7 @@ WHERE CompanyName = "Du monde entier"
 
 -- 10 –Quel est le délai moyen de livraison en jours?
 
-SELECT ROUND(AVG(DATEDIFF(ShippedDate, OrderDate))) AS "Délai de dernière commande"
+SELECT ROUND(AVG(DATEDIFF(ShippedDate, OrderDate))) AS "Délai moyen de livraison en jours"
 FROM Orders
 
 
