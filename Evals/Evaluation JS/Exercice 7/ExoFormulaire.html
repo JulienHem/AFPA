@@ -50,14 +50,10 @@
                   <a class="nav-link disabled" href="ExoFormulaire.html">Formulaire</a>
                 </li>
               </ul>
-             
-              </form>
             </div>
           </nav>
         </div>
       </div>
-
-
       <div class="row">
         <div class="col-12">
           <img src="promotion.jpg" class="img-fluid" alt="promotion">
@@ -67,7 +63,6 @@
 
     <!-- FORMULAIRE -->
 
-    <body>
       <div class="row">
         <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-8">
           <p>*Ces zones sont obligatoires</p>
@@ -90,7 +85,7 @@
             <div class="form-group">
               <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA" onKeyUp="tempsreel()"><p id="ddn-error"></p>
               <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000" onKeyUp="tempsreel()"><p id="codepost-error"></p>
-              <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress" onKeyUp="tempsreel(evnt)"><p id="adress-error"></p>
+              <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress" onKeyUp="tempsreel()"><p id="adress-error"></p>
               <label for="ville">Ville*</label><input type="text" name="ville" class="form-control" id="city" onKeyUp="tempsreel()"><p id="ville-error"></p>
               <label for="email">Email* </label><input type="text" name="email" class="form-control"
                 placeholder="ex : comment.va@gmail.com" id="mail" onKeyUp="tempsreel(event)" ><p id="mail-error"></p>
@@ -115,11 +110,11 @@
             <p id="question-error"></p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="Acceptation">
-              <label class="form-check-label" for="Acceptation" required>J'accepte le traitement informatique de ce
-                formulaire.</label><br>
+              <label class="form-check-label" for="Acceptation" id="check">J'accepte le traitement informatique de ce
+                formulaire.</label><p id="check-error"></p>
               </div><br>
-              <button class="btn btn-primary" id="send">Envoyer</button>
-              <input type="reset" class="btn btn-primary" value="Annuler"></input>
+              <input type="submit" class="btn btn-primary" id="send" value="Envoyer">
+              <input type="reset" class="btn btn-primary" value="Annuler">
             </form>
         </div>
       
@@ -167,7 +162,6 @@
                     <a class="nav-link disabled" href="#">Plan du site</a>
                   </li>
                 </ul>
-                </form>
               </div>
             </nav>
           </div>

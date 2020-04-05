@@ -71,12 +71,12 @@ GROUP BY MONTH(OrderDate);
 SELECT MAX(OrderDate) AS "Date de dernière commande"
 FROM Orders
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
-WHERE CompanyName = "Du monde entier"
+WHERE CompanyName = "Du monde entier";
 
 -- 10 –Quel est le délai moyen de livraison en jours?
 
 SELECT ROUND(AVG(DATEDIFF(ShippedDate, OrderDate))) AS "Délai moyen de livraison en jours"
-FROM Orders
+FROM Orders;
 
 
 
