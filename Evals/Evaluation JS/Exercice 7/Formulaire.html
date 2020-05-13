@@ -66,7 +66,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-8">
           <p>*Ces zones sont obligatoires</p>
-          <form id="formulaire">
+          <form id="formulaire" action="script.php" method="post">
             <div class="form-group">
               <legend>Vos Coordonnées</legend>
               <label for="nom">Nom*</label><input type="nom" class="form-control" name="lenom" id="name"><p id="name-error"></p>
@@ -75,15 +75,15 @@
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-outline-primary">
-                <input type="radio" name="options" id="radio-option-1" autocomplete="off" checked="" required>Féminin
+                <input type="radio" name="sexe" id="radio-option-1" autocomplete="off" checked="" required>Féminin
               </label>
               <label class="btn btn-outline-primary active">
-                <input type="radio" name="options" id="radio-option-2" autocomplete="off" required>Masculin
+                <input type="radio" name="sexe" id="radio-option-2" autocomplete="off" required>Masculin
               </label>
             </div><br>
           
             <div class="form-group">
-              <label for="date">Date de naissance*</label><input type="text" name="code" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA" ><p id="ddn-error"></p>
+              <label for="date">Date de naissance*</label><input type="text" name="dateden" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA" ><p id="ddn-error"></p>
               <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000" ><p id="codepost-error"></p>
               <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress" ><p id="adress-error"></p>
               <label for="ville">Ville*</label><input type="text" name="ville" class="form-control" id="city"><p id="ville-error"></p>
@@ -93,7 +93,7 @@
             <legend>Votre demande</legend>
               <div class="form-group">
                 <label for="examplecontrolselec1">Sujet*</label>
-                <select class="form-control" id="menu">
+                <select class="form-control" id="menu" name="select">
                 <option value="empty"></option>
                 <option value="commande">Commande</option>
                 <option value="skill">Besoin de skill</option>

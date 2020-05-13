@@ -64,7 +64,7 @@ SELECT MONTH(OrderDate) AS "Mois 97", SUM(UnitPrice*Quantity) AS "Montant Ventes
 FROM Orders
 JOIN `Order Details` ON Orders.OrderID = `Order Details`.OrderID
 WHERE YEAR(OrderDate) = "1997"
-GROUP BY MONTH(OrderDate);
+GROUP BY `Mois 97`;
 
 -- 9 –Depuis quelle date le client «Du monde entier» n’a plus commandé?
 
