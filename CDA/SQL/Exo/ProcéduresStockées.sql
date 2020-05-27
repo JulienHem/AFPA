@@ -69,13 +69,25 @@ VALUES
 DELIMITER |
 CREATE TRIGGER stock_alerte AFTER UPDATE ON produit
     FOR EACH ROW
+
     BEGIN
-        DECLARE pro_c INT;
-        DECLARE ale DOUBLE;
-        SET pro_c = NEW.pro_codart;
-        SET ale = (SELECT pro_stkale-pro_stkphy FROM produit WHERE pro_codart = pro_c);
-        	IF ale > 0 
-				THEN
-        		INSERT articles_a_commander SET art_qte=ale WHERE pro_codart=pro_c;
-		  	END IF;
+        DECLARE pro_c CHAR(4);
+        DECLARE alert INT;
+        DECLARE codint INT;
+
+            SET pro_c = NEW.codart;
+            SET alert = (SELECT (stkale-stkphy) FROM produit WHERE codart = pro_c);
+            SET codint = (SELECT SUM(artacom_qte) FROM articles_a_commander WHERE codart = pro_c);
+        	    IF codint >= 0
+				    THEN
+        		    SET alert = alert - codint;
+		  		    END IF;
+                    INSERT INTO articles_a_commander (codart, artacom_date, artacom_qte) VALUES (pro_c, NOW(), alert);
+        
+
+                
 END;
+
+UPDATE produit
+SET stkphy = 
+WHERE codart = "B001"
