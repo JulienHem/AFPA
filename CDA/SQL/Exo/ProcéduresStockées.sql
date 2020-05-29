@@ -12,6 +12,27 @@ DELIMITER ;
 
 CALL Lst_Fournis;
 
+-- 2 ème procédure
+
+DELIMITER |
+    CREATE PROCEDURE lst_commandes(In observation Varchar(50))
+    BEGIN
+        SELECT entcom.numcom, fournis.nomfou, produit.libart, ligcom.qtecde*priuni
+        FROM entcom
+        JOIN fournis
+        ON entcom.numfou = fournis.numfou
+        JOIN ligcom
+        ON ligcom.numcom = entcom.numcom
+        JOIN produit
+        ON produit.codart = ligcom.codart
+        WHERE entcom.obscom LIKE CONCAT('%',observation,'%');
+    END |
+DELIMITER ;
+
+
+
+-- Trigger
+
 CREATE TRIGGER modif_reservation AFTER INSERT ON reservation
     FOR EACH ROW
     BEGIN
@@ -21,6 +42,8 @@ CREATE TRIGGER modif_reservation AFTER INSERT ON reservation
             SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'Un problème est survenu. Règle de gestion altitude !';
         END IF;
 END;
+
+
 
 
 -- 3ème Trigger
@@ -86,7 +109,9 @@ CREATE TRIGGER stock_alerte AFTER UPDATE ON produit
         
 
                 
-END;
+END|
+
+DELIMITER ;
 
 UPDATE produit
 SET stkphy = 

@@ -38,7 +38,7 @@ CREATE INDEX Index1
 ON Entcom (four_numfou);
 
 CREATE TABLE Ligcom (
-ent_numcom INT NOT NULL,
+ent_numcom INT NOT NULL AUTO_INCREMENT,
 pro_codart CHAR (4) NOT NULL,
 lig_numlig TINYINT NOT NULL,
 lig_qtecde INT NOT NULL,
