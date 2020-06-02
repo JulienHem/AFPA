@@ -30,7 +30,6 @@ ent_numcom INT NOT NULL AUTO_INCREMENT,
 ent_obscom varchar (50) NULL,
 ent_datcom DATETIME (6) NOT NULL,
 four_numfou varchar(25) NOT NULL,
-
 PRIMARY KEY (ent_numcom),
 FOREIGN KEY (four_numfou) REFERENCES Fournis (four_numfou)
 );
@@ -46,9 +45,11 @@ lig_qtecde INT NOT NULL,
 lig_priuni DECIMAL (9, 2) NOT NULL,
 lig_qteliv int NULL,
 lig_derliv DATETIME NOT NULL,
+PRIMARY KEY (ent_numcom, lig_numlig),
 FOREIGN KEY (ent_numcom) REFERENCES Entcom (ent_numcom),
 FOREIGN KEY (pro_codart) REFERENCES Produit (pro_codart)
 );
+
 
 CREATE TABLE Vente (
 pro_codart CHAR (4) NOT NULL,
