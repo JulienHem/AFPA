@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd5c6580-6ed6-4be0-8067-d99ef304c76d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Vues.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bootstrap/ExoFormulaire.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bootstrap/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bootstrap/exotableau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bootstrap/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bootstrap/js/Exercice7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 1/Exercice1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 1/Exercice1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 2/Exercice2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 2/Exercice2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 3/Exercice3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 3/Exercice3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 4/Exercice4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 4/Exercice4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 5/Exercice5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 5/Exercice5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 6/Exercice6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 6/Exercice6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/Formulaire.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/Tableau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/jarditou_logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/img/promotion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation JS/Exercice 7/js/Exercice7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation SQL/Exercice1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation SQL/Exercice2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation SQL/northwind_MySQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evals/Evaluation SQL/script_papyrus_complet.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/ExoFormulaire.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/Jarditou.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/exotableau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/jarditou_logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JardiResponsive/img/promotion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Evenements/Exo1/Exo1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Evenements/Exo1/Exo1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Evenements/Exo2/exo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Evenements/Exo2/exo2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Evenements/event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Evenements/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Formulaire/Exo/Contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Formulaire/Exo/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Formulaire/Exo/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Formulaire/formulaire.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/Formulaire/formulaire.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS04/Cours.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS04/Cours.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS04/Exo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS04/Exo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS05/ExoJS05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS05/ExoJS05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Cours.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Cours.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 0/Exo0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 0/Exo0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 1/Exo1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 1/Exo1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 2/Exo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 2/Exo2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 3/Exo3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 3/Exo3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 4/Exo4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS06/Exo 4/Exo4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Cours.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Cours.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 1/Exo1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 1/Exo1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 2/Exo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 2/Exo2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 3/Exo3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 3/Exo3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 4/Exo4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 4/Exo4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 5/Exo5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 5/Exo5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 6/Exo6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 6/Exo6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 7/Exo7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 7/Exo7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 8/Exo8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS07/Exo 8/Exo8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 1/Exo1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 1/Exo1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 1/papillon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 2/Exo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 2/Exo2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 3/Exo3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 3/Exo3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 4/Exo4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/Exo 4/Exo4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/ExoJS08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS08/ExoJS08.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Cours.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Cours.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 1/Exo1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 1/Exo1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 2/Exo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 2/Exo2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 3/Exo3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 3/Exo3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 4/Exo4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS09/Exo 4/Exo4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS10/Cours.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS10/Cours.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS13/Exo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Javascript/JS13/Exo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Exos/ExemplePart1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Exos/Exo3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Exos/PapyrisP3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Exos/exo2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/Exemple.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/Insert.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/Papyrus.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/UsersPapyrus.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/hotel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/northwind_MySQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SQL/Script/script_papyrus_complet.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../tableautest.html" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vues.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Vues.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2a6f8cd3-617e-4316-90ef-f0f8a53abbd1/console.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="381" />
+    <option name="y" value="-10" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Vues" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql.8" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd5c6580-6ed6-4be0-8067-d99ef304c76d" name="Default Changelist" comment="" />
+      <created>1589379499810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589379499810</updated>
+      <workItem from="1589379502177" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="52000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2a6f8cd3-617e-4316-90ef-f0f8a53abbd1/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vues.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

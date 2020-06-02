@@ -65,3 +65,17 @@ ven_prix3 decimal (9, 2) NULL,
 FOREIGN KEY (four_numfou) REFERENCES Fournis (four_numfou),
 FOREIGN KEY (pro_codart) REFERENCES Produit (pro_codart)
 );
+
+-- DECLENCHEURS 
+
+DELIMITER |
+CREATE TRIGGER stock_alerte AFTER UPDATE ON produit
+    FOR REACH ROW
+    BEGIN
+        DECLARE pro_c = NEW.pro_codart;
+        DECLARE ale DOUBLE;
+        SELECT pro_stkale-pro_stkphy INTO alerte FROM produit;
+        IF alerte < 0 THEN
+        INSERT articles_a_commander SET alerte=ale WHERE pro_codart=pro_codart;
+        END IF;
+END;
