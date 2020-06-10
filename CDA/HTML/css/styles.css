@@ -4,10 +4,6 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-.hrheader {
-    border : 1px solid white;
-    width : 30%;
-}
 
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -16,13 +12,6 @@ h2 {
 h3{
     font-family: 'Roboto', sans-serif;
 }
-
-.header {
-
-    width: 100%;
-    display: inline-block;
-}
-
 
 .nomprenom {
     font-size : 200%;
@@ -51,7 +40,12 @@ h3{
     font-size : 150%;
 }
 
-
+.title {
+    
+    
+    font-size : 150%;
+    
+}
 
 .skill {
     width: 100%;
