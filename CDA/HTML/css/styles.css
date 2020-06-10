@@ -22,16 +22,6 @@ h3{
     font-size : 150%;
 }
 
-/* A PROPOS */
-
-.img-fluid {
-    display: inline-block;
-}
-
-
-.lapp {
-    height: auto;
-}
 
 /* COMPETENCES */
 
@@ -41,16 +31,14 @@ h3{
 }
 
 .title {
-    
-    
     font-size : 150%;
-    
 }
 
 .skill {
     width: 100%;
 }
 
-
-/* EXPERIENCES */
-
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
