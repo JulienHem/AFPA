@@ -1,0 +1,110 @@
+/* HEADER */
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border : 1px solid white;
+    width : 30%;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    text-align: center;
+    text-transform : uppercase;
+    background-color: #7d8a8e;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    margin: 0px;
+    padding-bottom: 40px;
+}
+
+
+#nomprenom {
+    margin-top : 50px;
+    font-size : 200%;
+    font-weight: 900;
+}
+
+#job {
+    font-size : 150%;
+}
+
+/* A PROPOS */
+
+.img-fluid {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 90px;
+
+}
+
+.propos {
+    margin-top: 70px;
+    background-color: white;
+   
+}
+
+.lapp {
+    text-align: center;
+    height: auto;
+}
+
+.proposbox {
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 90px;   
+}
+
+/* COMPETENCES */
+
+.competences {
+    margin-top: 15px;
+    background-color: #fafafa;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.utitle {
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.sub {
+    text-align: center;
+}
+
+#job {
+    font-size : 150%;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    text-align : center;
+    font-size : 150%;
+    text-transform : uppercase;
+    font-weight : 900;
+}
+
+#skill {
+    text-align: center;
+    width: 100%;
+    vertical-align: baseline;
+    text-transform : uppercase;
+}
+
+.row {
+    margin : auto;
+    max-width: 1200px;
+}
