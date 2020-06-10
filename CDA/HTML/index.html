@@ -4,105 +4,186 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>CV - Julien Hemery</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        </style>  
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <header class="header">
-                <p id="nomprenom">Julien HEMERY</p>
-                <hr>
-                <p id="job">Concepteur Développeur d'Applications</p>
+        <header class="pt-4 pb-5 mb-5 text-center text-uppercase bg-success header">
+            <p class="mt-5 text-white nomprenom">Julien HEMERY</p>
+            <hr class="bg-light w-25">
+            <p class="job text-white">Concepteur Développeur d'Applications</p>
         </header>
 
 
-        <!-- COLONNES -->
-        <div class="propos">
-            <p class="title">à propos</p>
+        <!-- A PROPOS -->
+        <div class="mt-5 bg-white propos">
+            <h2 class="mt-5 text-center text-uppercase">à propos</h2>
             <div class="row">
-                <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4 lapp">
-                <img src= "img/pp.png" class="img-fluid" alt="PP" width="250" height="250">
+                <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4 text-center lapp">
+                    <img src="img/pp.png" class="pt-1 pb-5 img-fluid" alt="PP" width="250" height="250">
                 </div>
-                <div class="col-sm-4 col-md-8 col-lg-7 col-xl-8 proposbox">
-                    <p>Adepte de la technologie depuis toujours, je me suis intéressé au développement assez vite en 
-                        autodidacte. 
+                <div class="col-sm-4 col-md-8 col-lg-7 col-xl-8 pt-5 pb-5">
+                    <p>Adepte de la technologie depuis toujours, je me suis intéressé au développement assez vite en
+                        autodidacte.
                         <br>
                         <br>
-                        N'ayant pas voulu continuer dans cette direction plus jeune je me suis intéressé à la cuisine, 
+                        N'ayant pas voulu continuer dans cette direction plus jeune je me suis intéressé à la cuisine,
                         puis au cinéma. C'est donc sur le tard que j'ai commencé une formation de Concepteur
-                        Développeur d'Applications et c'est aujourd'hui dans cette voie que je souhaite me lancer pour mon avenir. 
+                        Développeur d'Applications et c'est aujourd'hui dans cette voie que je souhaite me lancer pour
+                        mon avenir.
                         <br>
                         <br>
-                        Autodidacte et flexible, 
-                        je suis une personne très réactive dans mon travail, je sais apprendre et comprendre rapidement les tâches à réaliser. </p>
-                </div>   
-             </div>
-        
-
-        <div class="competences">
-            <h2 id="skill">Compétences</h2>
-            <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <h3 class="utitle">Langages</h3>
-                <p class="sub">HTML - CSS - Bootstrap 
-                <br>
-                JavaScript - SQL - PHP</p>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <h3 class="utitle">Logiciels</h3>
-                <p class="sub"> Pack Office - Libre Office - Visual Studio Code - IntelliJ IDEA - Laragon</p>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <h3 class="utitle">Extra</h3>
-                <p class="sub">Anglais courant - Photoshop
-                    <br> Méthode Agile</p>
+                        Autodidacte et flexible,
+                        je suis une personne très réactive dans mon travail, je sais apprendre et comprendre rapidement
+                        les tâches à réaliser. </p>
                 </div>
             </div>
+
+
+            <div class="pt-5 pb-5 mt-5 mb-5 bg-primary competences">
+
+                <h2 class=" mt-5 text-center text-uppercase skill">Compétences</h2>
+                <div class="mt-5 row">
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <div class="text-center mt-2">
+                            <img src="img/code.png" width="80" height="80">
+                        </div>
+                        <h3 class="utitle text-center mt-1">Langages</h3>
+                        <p class="sub mb-5 text-center">HTML - CSS - Bootstrap
+                            <br>
+                            JavaScript - SQL - PHP</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <div class="text-center mt-2">
+                            <img src="img/desktop.png" width="80" height="80">
+                        </div>
+                        <h3 class="utitle text-center mt-1">Logiciels</h3>
+                        <p class="sub text-center"> Pack Office - Libre Office - Visual Studio Code - IntelliJ IDEA -
+                            Laragon
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <div class="text-center mt-2">
+                            <img src="img/plus.png" width="80" height="80">
+                        </div>
+                        <h3 class="utitle text-center mt-1">Extra</h3>
+                        <p class="sub text-center">Anglais courant - Photoshop
+                            <br> Méthode Agile</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pt-5 mt-5 mb-5 text-center Expériences">
+                <h2 class="text-uppercase exp">Expériences</h2>
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <h3 class="text-justify" style="border-right:1px solid #000; height:auto">
+                            Avril 2020
+                            <br>
+                            Septembre 2020</h3>
+                    </div>
+                    <div class="col-3 text-justify">
+                        <p>Employé Restauration</p>
+                        <p class="mb-5">IKEA</p>
+                    </div>
+
+                    <div class="col-2">
+                        <h3 class="text-left" style="border-right:1px solid #000; height:auto">Juin 2019
+                            <br>
+                            Août 2019</h3>
+                    </div>
+                    <div class="col-4 text-justify">
+                        <p>Opérateur et Préparateur de commandes</p>
+                        <p>Akwell</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <h3 class="text-justify" style="border-right:1px solid #000; height:auto">
+                            Octobre 2019
+                            <br>
+                            Novembre 2019</h3>
+                    </div>
+                    <div class="col-3 text-justify">
+                        <p>Serveur restauration</p>
+                        <p class="mb-5">La Dame Jeanne</p>
+                    </div>
+
+                    <div class="col-2">
+                        <h3 class="text-left" style="border-right:1px solid #000; height:auto">Mai 2018
+                            <br>
+                            Juillet 2018</h3>
+                    </div>
+                    <div class="col-4 text-justify">
+                        <p>Opérateur et Préparateur de commandes</p>
+                        <p>Akwell</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="pt-5 mt-5 mb-5 etudes bg-primary text-center">
+                <h2 class="text-uppercase">Diplômes</h2>
+                <div class="row mt-5">
+                    <div class=" col-4 text-center">
+                        <h3>Février 2020 - En cours</h3>
+                        <hr class="bg-dark w-50">
+                        <p>Concepteur Développeur d'Applications
+                            <br>
+                            AFPA
+                        </p>
+                    </div>
+                    <div class="col-8">
+                        <h3>Septembre 2017 - Mai 2019</h3>
+                        <hr class="bg-dark w-25">
+                        <p>Licence d'Etudes Cinématographique
+                            <br>
+                            UPJV Amiens et Université Lille</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="text-center col-4">
+                        <h3>Septembre 2012 - Mai 2015</h3>
+                        <hr class="bg-dark w-50">
+                        <p>Licence Anglais
+                            <br>
+                            UPJV Amiens
+                        </p>
+                    </div>
+                    <div class="text-center col-8">
+                        <h3>Septembre 2010 - Juin 2012</h3>
+                        <hr class="bg-dark w-25">
+                        <p>BAC Professionnel Logistique
+                            <br>
+                            Lycée Pierre Mendés France</p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
         </div>
-
-        <div class="Expériences">
-            <h2>Expériences</h2>
-            <p class="année">Avril 2020 - Septembre 2020</p>
-            <p class="titrejob">Employé Restauration</p>
-            <p class="entreprise">IKEA</p>
-
-            <p class="année">Juin 2019 - Août 2019</p>
-            <p class="titre job">Opérateur et Préparateur de commandes</p>
-            <p class="entreprise">Akwell</p>
-        </div>
-
-        <div class="etudes">
-            <h2>Diplômes</h2>
-            <p class="année">Février 2020 - En cours</p>
-            <p class="titrejob">Concepteur Développeur d'Applications</p>
-            <p class="entreprise">AFPA</p>
-
-            <p class="année">Septembre 2017 - Mai 2019</p>
-            <p class="titre job">Licence d'Etudes Cinématographique</p>
-            <p class="entreprise">UPJV Amiens et Université Lille 3</p>
-
-            <p class="année">Septembre 2010 - Juin 2012</p>
-            <p class="titre job">BAC Professionnel Logistique</p>
-            <p class="entreprise">Lycée Pierre Mendés France</p>
-
-        </div>
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    </div>
 </body>
+
 </html>
