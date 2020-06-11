@@ -42,3 +42,23 @@ h3{
     width: 80%;
     margin: auto;
 }
+
+.wrapper2{
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.hrheader {
+    animation: line 2s linear forwards;
+}
+
+@keyframes line {
+    from {
+        width:0%;
+    }
+    to {
+        width: 20%;
+    }
+}
