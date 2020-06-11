@@ -51,7 +51,7 @@ h3{
 
 
 .hrheader {
-    animation: line 2s linear forwards;
+    animation: line 1s linear forwards;
 }
 
 @keyframes line {
