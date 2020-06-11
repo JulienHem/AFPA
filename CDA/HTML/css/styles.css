@@ -62,3 +62,9 @@ h3{
         width: 20%;
     }
 }
+
+.date1 {
+    animation: 1s linear; 
+}
+
+@keyframes 
