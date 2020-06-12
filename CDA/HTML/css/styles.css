@@ -1,41 +1,16 @@
 /* HEADER */
 
-p {
-    font-family: 'Roboto', sans-serif;
+body{ 
+    font-family:roboto, sans-serif ;
+
 }
 
-
-h2 {
-    font-family: 'Roboto', sans-serif;
+li{
+    display: inline;
 }
 
-h3{
-    font-family: 'Roboto', sans-serif;
-}
-
-.nomprenom {
-    font-size : 200%;
-    font-weight: 900;
-}
-
-.job {
-    font-size : 150%;
-}
-
-
-/* COMPETENCES */
-
-
-#job {
-    font-size : 150%;
-}
-
-.title {
-    font-size : 150%;
-}
-
-.skill {
-    width: 100%;
+.menu{
+    list-style: none;
 }
 
 .wrapper{
@@ -50,6 +25,10 @@ h3{
 
 
 
+
+
+/* ANIMATIONS */
+
 .hrheader {
     animation: line 1s linear forwards;
 }
@@ -63,8 +42,34 @@ h3{
     }
 }
 
-.date1 {
-    animation: 1s linear; 
+.centerjust{
+    justify-content: center;
+    text-align: justify;
 }
 
-@keyframes 
+.date {
+    
+    animation: move 1s linear forwards;
+}
+
+@keyframes move {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 60%;
+    }
+}
+
+.hrdiplo {
+    animation: large 1s linear forwards;
+}
+
+@keyframes large {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%;
+    }
+}
