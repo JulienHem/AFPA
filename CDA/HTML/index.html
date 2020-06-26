@@ -7,232 +7,217 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>CV - Julien Hemery</title>
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    </style>
 </head>
 
 <body>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 m-0">
         <header class="bg-success">
-            <div class="row">
+            <div class="row wrapper">
                 <div class="col-12 pt-4 text-center text-uppercase">
-                    <h2 class="mt-5 mb-2 text-white nomprenom font-weight-bold">Julien HEMERY</h2>
+                    <p class="h2 mt-5 mb-2 text-white nomprenom font-weight-bold">Julien HEMERY</p>
                 </div>
             </div>
-
-            <div class="row mt-n3 ">
+            <div class="row mt-n3 wrapper ">
                 <div class="col-12">
                     <hr class="bg-light hrheader">
                 </div>
             </div>
 
-            <div class="row mt-n4 pb-5">
+            <div class="row mt-n4 pb-5 wrapper">
                 <div class="col-12 pt-4 text-center text-uppercase">
-                    <h3 class="job text-white ">Concepteur Développeur d'Applications</h3>
+                    <p class="h3 job text-white ">Concepteur Développeur d'Applications</p>
                 </div>
             </div>
         </header>
-        <div class="menu menu-absolute bg-info" id="navbar">
+
+        <!-- NAVBAR -->
+        <div class="menu menu-absolute bg-info text-center" id="navbar">
             <ul class="menu-list text-uppercase text-center pt-3 pb-3 bg-info font-weight-normal ">
                 <li class="mr-2">
-                    <a class=" text-decoration-none" href="#propos">à propos</a>
+                    <a class=" text-decoration-none" href="#propos" title="propos">à propos</a>
                 </li>
                 <li class="mr-2">
-                    <a class=" text-decoration-none" href="#competences">compétences</a>
+                    <a class=" text-decoration-none" href="#competences" title="competences">compétences</a>
                 </li>
                 <li class="mr-2">
-                    <a class=" text-decoration-none" href="#exp">expériences</a>
+                    <a class=" text-decoration-none" href="#exp" title="competences">expériences</a>
                 </li>
                 <li class="mr-2">
-                    <a class="text-decoration-none" href="#diplomes">diplômes</a>
+                    <a class="text-decoration-none" href="#diplomes" titles="comptences">diplômes</a>
                 </li>
             </ul>
         </div>
 
 
-
-
         <!-- A PROPOS -->
         <div class="row wrapper mt-5 mb-4">
             <div class="col-12 text-center">
-                
                 <div class="mt-5 bg-white">
-                    <h2 class="mt-5 text-center text-uppercase" id="propos">à propos</h2>
+                    <p class="h2 mt-5 text-center text-uppercase" id="propos">à propos</p>
                 </div>
             </div>
         </div>
         <div class="row wrapper2 mb-5 mt-3">
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-                <img src="img/pp.png" class="pt-1 pb-5 img-fluid" alt="PP" width="250" height="250">
+                <img src="img/pp.png" id="pp" class="pt-1 pb-5 img-fluid" alt="PP" title="profilepic">
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-3 text-justify">
-                <p>Adepte de la technologie depuis toujours, je me suis intéressé au développement assez vite en
+                <p class="mt-2">Adepte de la technologie depuis toujours, je me suis intéressé au développement assez
+                    vite en
                     autodidacte.
-                    <br>
-                    <br>
+                </p>
+                <p>
                     N'ayant pas voulu continuer dans cette direction plus jeune je me suis intéressé à la cuisine,
                     puis au cinéma. C'est donc sur le tard que j'ai commencé une formation de Concepteur
                     Développeur d'Applications et c'est aujourd'hui dans cette voie que je souhaite me lancer pour
                     mon avenir.
-                    <br>
-                    <br>
+                </p>
+                <p>
                     Autodidacte et flexible,
                     je suis une personne très réactive dans mon travail, je sais apprendre et comprendre rapidement
-                    les tâches à réaliser. </p>
+                    les tâches à réaliser.
+                </p>
             </div>
 
         </div>
 
+        <!-- COMPETENCES -->
 
-
-        <div class="row bg-primary">
-            <div class="col-12">
-                <h2 class="pt-5 mt-5 text-center text-uppercase skill" id="competences">Compétences</h2>
+        <div class="row bg-primary text-center m-0 mb-4 mt-5">
+            <div class="col-12 wrapper">
+                <p class="h2 pt-5 mt-5 text-center text-uppercase">Compétences</p>
             </div>
             <div class="row mb-5 mt-3 wrapper">
                 <div class="col-sm-4 col-md-4">
                     <div class="text-center mt-2">
-                        <img src="img/code.png" width="80" height="80">
+                        <img src="img/code.png" title="code" class="littleimg">
                     </div>
-                    <h3 class="utitle text-center mt-2">Langages</h3>
-                    <p class="sub mb-5 text-center">HTML - CSS - Bootstrap
-                        <br>
-                        JavaScript - SQL - PHP</p>
+                    <p class="h3 utitle text-center mt-2">Langages</p>
+                    <p class="sub text-center">HTML - CSS - Bootstrap</p>
+                    <p class=" mt-n3 text-center">JavaScript - SQL - PHP</p>
                 </div>
                 <div class="col-sm-4 col-md-4">
                     <div class="text-center mt-2">
-                        <img src="img/desktop.png" width="80" height="80">
+                        <img src="img/desktop.png" title="desk" class="littleimg"">
                     </div>
-                    <h3 class="utitle text-center mt-2">Logiciels</h3>
-                    <p class="sub text-center"> Pack Office - Libre Office - Visual Studio Code
-                        <br>
-                        IntelliJ IDEA - Laragon
-                    </p>
+                    <p class="h3 utitle text-center mt-2">Logiciels</p>
+                        <p class=" text-center"> Pack Office - Libre Office - Visual Studio Code</p>
+                        <p class="mt-n3 text-center">IntelliJ IDEA - Laragon</p>
                 </div>
-                <div class="col-sm-4 col-md-4">
-                    <div class="text-center mt-2">
-                        <img src="img/plus.png" width="80" height="80">
+                    <div class="col-sm-4 col-md-4 ">
+                        <div class="text-center mt-2">
+                            <img src="img/plus.png" title="plus" class="littleimg">
+                        </div>
+                        <p class="h3 utitle text-center mt-2">Extra</p>
+                        <p class="text-center">Anglais courant - Photoshop</p>
+                        <p class="mt-n3 text-center mb-5"> Méthode Agile</p>
                     </div>
-                    <h3 class="utitle text-center mt-2">Extra</h3>
-                    <p class="sub text-center">Anglais courant - Photoshop
-                        <br> Méthode Agile</p>
-                </div>
 
             </div>
         </div>
 
+            <!-- EXPERIENCES -->
 
+            <div class="row wrapper mt-5 mb-5">
+                <div class="col-12">
+                    <div class="pt-5 mt-5 mb-5 text-center ">
+                        <p class="text-uppercase h2" id="exp">Expériences</p>
+                    </div>
+                </div>
+                <div class="row mt-3 wrapper">
+                    <div class="col-sm-3 col-md-3">
+                        <div class="text-center date h3" style="border-right:1px solid #000; height:auto">
+                            <p>Avril 2020</p>
+                            <p class="mt-n1">Septembre 2020</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 text-justify">
+                        <p>Employé Restauration</p>
+                        <p class="mt-4">IKEA</p>
+                    </div>
 
+                    <div class="col-sm-3 col-md-3 ">
+                        <div class="text-center date h3" style="border-right:1px solid #000; height:auto">
+                           <p>Juin 2019</p> 
+                            <p class="mt-n1">Août 2019</p>
+                        </div>
+                    </div>
+                    <div class="mb-5 col-sm-3 col-md-3 text-justify">
+                        <p>Opérateur et Préparateur de commandes</p>
+                        <p class="mt-4"> Akwell</p>
+                    </div>
+                </div>
 
-        <div class="row wrapper">
-            <div class="col-12">
-                <div class="pt-5 mt-5 mb-5 text-center ">
-                    <h2 class="text-uppercase" id="exp">Expériences</h2>
+                <div class="row mt-4 wrapper">
+                    <div class="col-sm-3 col-md-3">
+                        <div class="text-center date h3" style="border-right:1px solid #000; height:auto">
+                            <p>Octobre 2019</p>
+                            <p class="mt-n1">Novembre 2019</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 text-justify">
+                        <p>Serveur restauration</p>
+                        <p class="mt-4 ">La Dame Jeanne</p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-3">
+                        <div class="text-center date h3" style="border-right:1px solid #000; height:auto">
+                            <p>Mai 2018</p>
+                            <p class="mt-n1">Juillet 2018</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 text-justify">
+                        <p>Opérateur et Préparateur de commandes</p>
+                        <p class="mt-4 pb-5 ">Akwell</p>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-3 wrapper">
-                <div class="col-sm-3 col-md-3">
-                    <h3 class="text-center centerjust date" style="border-right:1px solid #000; height:auto">
-                        Avril 2020
-                        <br>
-                        Septembre 2020</h3>
-                </div>
-                <div class="col-sm-3 col-md-3 text-justify">
-                    <p>Employé Restauration</p>
-                    <p class="mb-5">IKEA</p>
-                </div>
 
-                <div class="col-sm-3 col-md-3 ">
-                    <h3 class="text-center date" style="border-right:1px solid #000; height:auto">Juin 2019
-                        <br>
-                        Août 2019</h3>
-                </div>
-                <div class="col-sm-2 col-md-3 text-justify">
-                    <p class="mb-5">Opérateur et Préparateur de commandes
-                        <br>Akwell
-                    </p>
-                </div>
-            </div>
+            <!-- DIPLOMES -->
 
-            <div class="row mt-5 wrapper">
-                <div class="col-sm-2 col-md-3">
-                    <h3 class="text-center date" style="border-right:1px solid #000; height:auto">
-                        Octobre 2019
-                        <br>
-                        Novembre 2019</h3>
+            <div class="row bg-primary text-center m-0">
+                <div class="col-12 wrapper m-0">
+                    <p class="h2 pt-5 mt-5 text-center text-uppercase">Diplômes</p>
                 </div>
-                <div class="col-sm-2 col-md-3 text-justify">
-                    <p>Serveur restauration</p>
-                    <p class="mb-5">La Dame Jeanne</p>
-                </div>
-
-                <div class="col-sm-2 col-md-3">
-                    <h3 class="text-center date" style="border-right:1px solid #000; height:auto">Mai 2018
-                        <br>
-                        Juillet 2018</h3>
-                </div>
-                <div class="col-sm-2 col-md-3 text-justify">
-                    <p class="mb-5">Opérateur et Préparateur de commandes
-                        <br>Akwell
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row pt-5 mt-5 mb-5 bg-primary text-center ">
-            <div class="col-12">
-                <h2 class="text-uppercase text-center" id="diplomes"">Diplômes</h2>
-            </div>
-            <div class=" row mt-5 wrapper">
+                <div class=" row mt-5 wrapper">
                     <div class=" col-6 text-center ">
-                        <h3>Février 2020 - En cours</h3>
+                        <p class="h3">Février 2020 - En cours</p>
                         <hr class="bg-dark hrdiplo">
-                        <p>Concepteur Développeur d'Applications
-                            <br>
-                            AFPA
-                        </p>
+                        <p>Concepteur Développeur d'Applications</p>
+                        <p class="mt-n3">AFPA</p>
                     </div>
 
                     <div class="col-6">
-                        <h3>Septembre 2017 - Mai 2019</h3>
+                        <p class="h3">Septembre 2017 - Mai 2019</p>
                         <hr class="bg-dark hrdiplo">
-                        <p>Licence d'Etudes Cinématographique
-                            <br>
-                            UPJV Amiens et Université Lille</p>
+                        <p>Licence d'Etudes Cinématographique</p>
+                        <p class="mt-n3"> UPJV Amiens et Université Lille</p>
                     </div>
+                </div>
+
+                <div class="row mt-5 mb-5 wrapper">
+                    <div class="text-center col-6">
+                        <p class="h3">Septembre 2012 - Mai 2015</p>
+                        <hr class="bg-dark hrdiplo">
+                        <p>Licence Anglais</p>
+                        <p class="mt-n3">UPJV Amiens</p>
+                    </div>
+                    <div class="text-center col-6">
+                        <p class="h3">Septembre 2010 - Juin 2012</p>
+                        <hr class="bg-dark hrdiplo">
+                        <p>BAC Professionnel Logistique</p>
+                        <p class="mt-n3">Lycée Pierre Mendés France</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="row mt-5 mb-5 wrapper">
-                <div class="text-center col-6">
-                    <h3>Septembre 2012 - Mai 2015</h3>
-                    <hr class="bg-dark hrdiplo">
-                    <p>Licence Anglais
-                        <br>
-                        UPJV Amiens
-                    </p>
-                </div>
-                <div class="text-center col-6">
-                    <h3>Septembre 2010 - Juin 2012</h3>
-                    <hr class="bg-dark hrdiplo">
-                    <p>BAC Professionnel Logistique
-                        <br>
-                        Lycée Pierre Mendés France</p>
-                </div>
-            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="js/script.js"></script>
+
         </div>
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-            <script src="js/js.js"></script>
-
-    </div>
 </body>
 
 </html>
