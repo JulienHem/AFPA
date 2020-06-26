@@ -67,9 +67,23 @@ li{
 
 .littleimg {
     width : 80px;
-    height: ;
+    height: 80px;
 }
 
+
+/* MEDIA */
+
+@media (max-width: 375px) {
+    .centeresp {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .deux {
+        margin-top: 20%;
+    }
+}
 
 /* ANIMATIONS */
 
@@ -86,10 +100,6 @@ li{
     }
 }
 
-.centerjust{
-    justify-content: center;
-    text-align: justify;
-}
 
 .date {
     
@@ -105,15 +115,16 @@ li{
     }
 }
 
+
 .hrdiplo {
     animation: large 1s linear forwards;
 }
 
 @keyframes large {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 30%;
     }
 }
