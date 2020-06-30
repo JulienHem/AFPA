@@ -11,10 +11,16 @@ body{
 
 li{
     display: inline;
+    margin: auto;
 }
 
 .menu{
     list-style: none;
+}
+
+ul {
+    display: flex;
+    padding-left: 0;
 }
 
 .wrapper{
@@ -40,7 +46,7 @@ li{
 /* POSITION STICKY DE LA NAVBAR */
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top:0;
     margin:0;
     width: 100%;
@@ -70,10 +76,14 @@ li{
     height: 80px;
 }
 
+.borderright {
+    border-right: 1px solid #000;
+    height: auto;
+}
 
 /* MEDIA */
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     .centeresp {
         top: 50%;
         left: 50%;
@@ -86,6 +96,7 @@ li{
 }
 
 /* ANIMATIONS */
+
 
 .hrheader {
     animation: line 1s linear forwards;
@@ -101,6 +112,15 @@ li{
 }
 
 
+
+@media screen and (max-width: 1024px) {
+
+.borderright {
+    border-right: none;
+}
+}
+
+@media screen and (min-width: 768px) {
 .date {
     
     animation: move 1s linear forwards;
@@ -127,4 +147,5 @@ li{
     to {
         width: 30%;
     }
+}
 }
