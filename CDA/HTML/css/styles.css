@@ -8,17 +8,6 @@ body{
     font-family:roboto, sans-serif ;
 }
 
-/* HEADER */
-
-li{
-    display: inline;
-    margin: auto;
-}
-
-.menu {
-    list-style: none;
-}
-
 .wrapper {
     width: 80%;
     margin: auto;
@@ -27,6 +16,22 @@ li{
 .wrapper2 {
     width: 70%;
     margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    position: relative;
+    z-index : -999;
+}
+
+li {
+    display: inline;
+    margin: auto;
+}
+
+.menu {
+    list-style: none;
 }
 
 #navbar a {
@@ -47,7 +52,7 @@ li{
     width: 100%;
     height: 5%;
     transition: 1s;
-    z-index: 10000;
+    z-index: 999;
 }
 
 #navbar.sticky {
@@ -80,7 +85,7 @@ li{
 
 @media screen and (max-width: 1024px) {
 
-    ul {
+ul {
     display: flex;
     padding-left: 0;
     margin-right: 0;
