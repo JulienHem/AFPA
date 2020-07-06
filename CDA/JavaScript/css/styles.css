@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #b2eaff;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#radio {
+    text-align: center;
+}
+
+#input {
+    text-align: center;
+}
+
+#bouton {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Jarditou</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- TITRE -->
+    <header>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-8">
+          <img src="img/jarditou_logo.jpg" class="img-fluid" alt="Logo Jarditou">
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-4">
+          <p id="titre">Tout le jardin</p>
+        </div>
+      </div>
+
+
+
+      <!-- NAV -->
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Accueil</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Tableau.html">Tableau</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Formulaire.html">Formulaire</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <img src="img/promotion.jpg" class="img-fluid" alt="promotion">
+        </div>
+      </div>
+    </header>
+
+    <!-- FORMULAIRE -->
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-8">
+          <p>*Ces zones sont obligatoires</p>
+          <form id="formulaire" action="script.php" method="post">
+            <div class="form-group">
+              <legend>Vos Coordonnées</legend>
+              <label for="nom">Nom*</label><input type="nom" class="form-control" name="lenom" id="name"><p id="name-error"></p>
+              <label for="prenom">Prénom*</label><input type="prenom" class="form-control" name="prenom" id="pren" ><p id="prenom-error"></p>
+              <label for="sexe">Sexe*</label><p id="sexe-error"></p>
+            </div>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="sexe" id="radio-option-1" autocomplete="off" checked="" required>Féminin
+              </label>
+              <label class="btn btn-outline-primary active">
+                <input type="radio" name="sexe" id="radio-option-2" autocomplete="off" required>Masculin
+              </label>
+            </div><br>
+          
+            <div class="form-group">
+              <label for="date">Date de naissance*</label><input type="text" name="dateden" class="form-control" id="ddn" placeholder="ex : JJ/MM/AAAA" ><p id="ddn-error"></p>
+              <label for="code">Code postal*</label><input type="text" name="code" class="form-control" id="codepost" placeholder="ex : 80000" ><p id="codepost-error"></p>
+              <label for="adresse">Adresse*</label><input type="text" name="adresse" class="form-control" id="adress" ><p id="adress-error"></p>
+              <label for="ville">Ville*</label><input type="text" name="ville" class="form-control" id="city"><p id="ville-error"></p>
+              <label for="email">Email* </label><input type="text" name="email" class="form-control"
+                placeholder="ex : comment.va@gmail.com" id="mail" ><p id="mail-error"></p>
+            </div>
+            <legend>Votre demande</legend>
+              <div class="form-group">
+                <label for="examplecontrolselec1">Sujet*</label>
+                <select class="form-control" id="menu" name="select">
+                <option value="empty"></option>
+                <option value="commande">Commande</option>
+                <option value="skill">Besoin de skill</option>
+                <option value="arcade">Acheter un stick arcade</option>
+                <option value="souris">Une nouvelle souris</option>
+                <option value="stage">Proposition de stage</option> 
+                </select>
+              </div>
+              <p id="menu-error"></p>
+            <div class="form-group">
+              <label for="question">Votre question* : </label><textarea class="form-control" name="commentaire" id="question" placeholder="Pas plus de 500 caractères"
+                ></textarea>
+            </div>
+            <p id="question-error"></p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkbox">
+              <label class="form-check-label" for="checkbox" id="check">J'accepte le traitement informatique de ce
+                formulaire.</label><p id="check-error"></p>
+              </div><br>
+              <input type="submit" class="btn btn-primary" id="send" value="Envoyer">
+              <input type="reset" class="btn btn-primary" value="Annuler">
+            </form>
+        </div>
+      
+
+      <!-- COLONNE DROITE -->
+
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-4">
+        <aside>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vestibulum dui eget auctor. Nunc
+            sapien enim, semper nec hendrerit vitae, vestibulum id ipsum. Nullam odio libero, volutpat vel vestibulum
+            sit amet, fermentum ut lacus. Pellentesque at pulvinar lacus. Sed vel dignissim est, hendrerit efficitur
+            purus. Pellentesque volutpat consectetur nulla id eleifend. Nam pretium tempor elit, nec lacinia massa
+            sollicitudin vel. Ut tristique lectus risus, in blandit libero hendrerit nec. Ut nec dictum lectus. Maecenas
+            luctus rutrum pretium. Nulla arcu elit, rhoncus sed tempus eu, dapibus at arcu. Praesent laoreet elit
+            interdum, congue nibh vitae, aliquam metus. Phasellus maximus consequat justo, non dignissim elit sagittis
+            nec. Fusce id molestie ante, quis pulvinar tellus. Sed maximus ipsum vel laoreet convallis. Phasellus
+            blandit dolor eu nibh suscipit gravida. Ut fermentum odio at sapien iaculis, eget blandit augue mollis.
+            Donec vehicula tincidunt dolor sed dictum. </span>
+        </aside>
+      </div>
+      </div> 
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Mentions légales</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Horaires</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Plan du site</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          </div>
+      </footer>
+    </div>
+    
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="js/Exercice7.js"></script>
+
+
+</body>
+
+</html>
