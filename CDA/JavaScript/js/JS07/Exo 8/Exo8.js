@@ -1,18 +1,16 @@
-// EXERCICE 8
+let mot = document.getElementById("mot").value;
+let nbVoyelle = 0;             // Je définis la valeur de nbVoyelle pour commencer à partir de 0
+let i = 0;
 
-var magic = parseInt(Math.random() * 100);
-console.log(magic)
+bouton.addEventListener("click", function() {
 
-do {
-    var num = window.prompt("Cherche le nombre 'culé");
-    if (num < magic) {
-        window.alert("PLUS GRAND LEL")
+            // "for" me permet de donner toutes les conditions de "i"
+for (i = 0; i < mot.length; i++) {
+            // Cela permet d'identifier les voyelles
+    if ((mot[i]=="a")||(mot[i]=="e")||(mot[i]=="i")||(mot[i]=="o")||(mot[i]=="u")||(mot[i]=="y")) {
+        nbVoyelle++;
     }
-    else if (num > magic) {
-        window.alert("PLUS PETIT NOOB")
-    }
-    else {
-        window.alert("GG BG")
-    }
+}
+alert(mot + " contient " + nbVoyelle + " voyelle(s) " + "et "+ (mot.length - nbVoyelle) + " consonne(s)")
 
-} while (num != magic)
+});

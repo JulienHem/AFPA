@@ -1,20 +1,26 @@
 // EXERCICE 4
 
-var s = 0;
-var m = 0;
-console.log("Somme et moyenne");
-console.log("=======================");
 
-do {
-  var n1 = parseInt(window.prompt("Saisir le premier nombre"));
+bouton.addEventListener("click", function() {
 
-  if (n1 == 0) {
-    break;
-  }
+var n1 = parseInt(document.getElementById("nbre1").value);
+var n2 = parseInt(document.getElementById("nbre2").value);
+var a = 0
 
-  s = s + n1
-  m = (m + n1) / 2
+if (n1 < n2) {
+  do {
+    a = a + n1
+    n1++;
+  } while (n1 < n2)
+  alert(a)
 
-  console.log("La somme est de "  + s + " et la moyenne est de " + m )
-} while (n1 != 0)
-console.log("Fin de la boucle")
+}
+else {
+  do {
+    a = a + n2;
+    n2++;
+  } while (n1 > n2);
+  alert(a)
+
+}
+})

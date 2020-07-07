@@ -1,13 +1,22 @@
 // EXERCICE 5
 
-var n = parseInt(window.prompt("Entrez le 1er nombre"))
-var x = parseInt(window.prompt("Entrez le 2eme nombre"))
-console.log("Résultats")
-console.log("======================")
+let s = 0;
+let m = 0;
 
-for (n = 0; n <= 10; n++) {
+bouton.addEventListener("click", function() {
 
-  result = n * x
-  console.log(n + "*" + x + "=" + result)
+  var n1 = parseInt(document.getElementById("nbre1").value);
+  
+
+ if (n1 == 0) {
+  
+  alert("La somme est de "  + s + " et la moyenne est de " + m )
+
+ } else {
+  
+  s = s + n1
+  m = (m + n1) / 2
+ 
 }
-console.log("Fin de la boucle")
+
+});

@@ -1,25 +1,15 @@
-// EXERCICE 3
+// On rentre les 2 valeurs qui nous donnerons la somme
 
-var n1 = parseInt(window.prompt("Saisir le premier nombre"));
-var n2 = parseInt(window.prompt("Saisir le deuxième nombre"));
-var a = 0
-console.log("Somme des entiers");
-console.log("===================");
+bouton.addEventListener("click", function() {
 
+var n = parseInt(document.getElementById("chiffre1").value);
+var c = -n;
 
-if (n1 < n2) {
-  do {
-    a = a + n1
-    n1++;
-    console.log(a)
-  } while (n1 < n2)
-}
-else {
-  do {
-    a = a + n2;
-    n2++;
-    console.log(a)
-  } while (n1 > n2);
-}
+do {
+    
+    result = c += n // Calcul de la somme de n et c
+    n-- // Décrémentation, ce qui permet d'aller du chiffre rentré jusqu'à 0
 
-console.log("Fin de la boucle");
+}while(n > 0) // Permet à N de ne pas aller en dessous de 0
+alert("La somme des entiers inférieur au nombre saisie est : " + result)
+});

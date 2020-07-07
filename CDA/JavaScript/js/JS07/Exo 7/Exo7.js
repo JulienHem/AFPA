@@ -1,17 +1,15 @@
-// EXERCICE 7
 
-var n = 0
-var result = true;
-var nb = window.prompt("Saisir un nombre");
 
-for (n = 2; n < nb; n++) {
-  if (nb % n == 0) 
-  {
-    result = false;
-    alert(nb + " est pas premier "+result)
-    break;
-  }
-  else 
-  alert(nb + " est premier "+result)
-  break;
+
+bouton.addEventListener("click", function () {
+
+let n = parseInt(document.getElementById("nbre1").value);
+let x = parseInt(document.getElementById("nbre2").value);
+let result = "";
+for (n = 1; n < x; n++) {
+
+  result = n + "*" + x + "=" + ( n * x ) + "\n" + result
 }
+alert(result)
+
+});

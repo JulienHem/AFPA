@@ -1,13 +1,19 @@
 // EXERCICE 2
 
-var n = window.prompt("Saisir nombre");
-console.log("Nombres inférieur à N");
-console.log("================");
 
-do
-{
-  console.log("Nombre" + " " + n)
+bouton.addEventListener("click", function() {
 
-  n--
-}while ( n >= 0)
-console.log("Fin de la boucle")
+  var n = document.getElementById("nbre").value;
+  let y = n;
+  let x = "";
+
+  do
+  {
+    x = x + "\n" + n;
+    n--
+
+  }while (n >= 0)
+  alert("Chiffres inférieur à " + y + " = " + x);
+
+
+});
