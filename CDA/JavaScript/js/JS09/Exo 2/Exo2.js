@@ -1,8 +1,9 @@
 // EXERCICE 2
 
+bouton.addEventListener("click", function() {
 
 function GetInteger() { // Lire un entier au clavier
-    entier = parseInt(window.prompt("Entrez le nombre entier"));
+    entier = parseInt(window.prompt("Entrez la taille du tableau"));
 }
 
 function InitTab() { // Créer et initialiser l'instance de tableau
@@ -53,7 +54,7 @@ SaisieTab()
 
 
 do {
-var menu = prompt("Afficher les postes du tableau : " + "\n" + "Choisissez le contenu que vous voulez : " + "\n" + "Maxi et moyenne des postes : " + "\n" + "Annuler");
+var menu = prompt("1 - Afficher les postes du tableau : " + "\n" + "2 - Choisissez le contenu que vous voulez : " + "\n" + "3 - Maxi et moyenne des postes : " + "\n" + "4 - Annuler");
 
 switch (menu){
     case "1" :
@@ -69,3 +70,4 @@ switch (menu){
     break;
 }
 }while (menu != "4")
+});

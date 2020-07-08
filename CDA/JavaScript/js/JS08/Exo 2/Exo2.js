@@ -1,6 +1,13 @@
-function lafonction (mot, lettre){
-mot2 = mot.split(lettre);
-compteur = mot2.length-1;
-return compteur;
-}
-alert(lafonction("camembert","e"));
+
+let resultat = 0
+let nb = document.getElementById("nbre").value
+
+bouton.addEventListener("click", function() {
+
+
+    for (i = 0; i <= 10; i++) {
+        resultat = resultat + "\n" + i +"x" + nb + " = " + i*nb;
+        
+    }
+    alert(resultat)
+});

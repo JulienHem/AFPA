@@ -1,23 +1,24 @@
-function tri (tabl){ // Permet de faire le tri
-    do {
-        changed = false;
-        for (i = 0; i < nb -1; i++){
-            if (tabl[i] > tabl[i + 1]){
-            var tampon = tabl[i + 1]
-            tabl[i + 1] = tabl[i]
-            tabl[i] = tampon
-            changed = true;
-        }
+
+
+
+
+function format(checkpren) {
+    function switchMAJ(replace) {
+        return replace.toLowerCase();
     }
-    }while(changed);
+    checkpren = checkpren.replace(/é|è|ê/g,"e");
+    checkpren = checkpren.replace(/[A-Zé]/g, switchMAJ);
+    return checkpren;
 }
 
-var tabl = new Array(parseInt(prompt("Saisissez le nombre de colonne : ")))
-var nb = tabl.length
-for (i = 0; i < nb; i++){
-tabl[i] = parseInt(prompt("Saisissez vos numéros :" ))
-console.log(tabl)
-}
+let tab = ["audrey","aurelien", "flavien", "jeremy", "laurent", "melik", "nouara", "salem", "samuel", "stephane"];
 
-tri(tabl)
-console.log(tabl)
+bouton.addEventListener("click", function() {
+
+    let prenom = document.getElementById("prénom").value
+    let checkpren = format(prenom);
+    tab = tab.filter(item => item !== checkpren); // Va créer un autre tableau, moins la valeur entrée dans le prompt
+    tab.length = 10;
+    alert(tab);
+
+});

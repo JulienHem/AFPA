@@ -1,15 +1,120 @@
 <!DOCTYPE html>
 <HTML lang=FR>
-    <head>
-        <meta charset="UTF-8">
-        <Title>Exercice 1 de JS08</Title>
-    </head>
-    <body>
-        
-        <div id="cube"></div>
-        <div id="produit"></div>
-        <div id="img"></div>
-        
-        <script src="Exo1.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <Title>Exercice JS08</Title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/material.min.css">
+
+</head>
+<header>
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar">
+            <a href="#JS04" class="mdl-tabs__tab">Afficher du texte</a>
+            <a href="#JS06" class="mdl-tabs__tab">Conditions</a>
+            <a href="#JS07" class="mdl-tabs__tab ">Boucles</a>
+            <a href="#JS08" class="mdl-tabs__tab is-active">Fonctions</a>
+            <a href="#JS09" class="mdl-tabs__tab">Tableaux</a>
+            <a href="#Evaluation" class="mdl-tabs__tab">Evaluation</a>
+        </div>
+
+        <div class="mdl-tabs__panel " id="JS04">
+            <div class="mdl-tabs__tab-bar">
+                <a href="../../JS04/Exo.html" class="mdl-tabs__tab">Exercice 1</a>
+            </div>
+        </div>
+
+
+        <div class="mdl-tabs__panel" id="JS06">
+            <div class="mdl-tabs__tab-bar">
+                <a href="../../JS06/Exo 1/Exo1.html" class="mdl-tabs__tab ">Exercice 1</a>
+                <a href="../../JS06/Exo 2/Exo2.html" class="mdl-tabs__tab ">Exercice 2</a>
+                <a href="../../JS06/Exo 3/Exo3.html" class="mdl-tabs__tab ">Exercice 3</a>
+                <a href="../../JS06/Exo 4/Exo4.html" class="mdl-tabs__tab ">Exercice 4</a>
+                <a href="../../JS06/Exo 5/Exo5.html" class="mdl-tabs__tab ">Exercice 5</a>
+            </div>
+        </div>
+
+        <div class="mdl-tabs__panel" id="JS07">
+            <div class="mdl-tabs__tab-bar">
+                <a href="../../JS07/Exo 1/Exo1.html" class="mdl-tabs__tab ">Exercice 1</a>
+                <a href="../../JS07/Exo 2/Exo2.html" class="mdl-tabs__tab ">Exercice 2</a>
+                <a href="../../JS07/Exo 3/Exo3.html" class="mdl-tabs__tab ">Exercice 3</a>
+                <a href="../../JS07/Exo 4/Exo4.html" class="mdl-tabs__tab ">Exercice 4</a>
+                <a href="../../JS07/Exo 5/Exo5.html" class="mdl-tabs__tab ">Exercice 5</a>
+                <a href="../../JS07/Exo 6/Exo6.html" class="mdl-tabs__tab ">Exercice 6</a>
+                <a href="../../JS07/Exo 7/Exo7.html" class="mdl-tabs__tab ">Exercice 7</a>
+                <a href="../../JS07/Exo 8/Exo8.html" class="mdl-tabs__tab ">Exercice 8</a>
+                <a href="../../JS07/Exo 9/Exo9.html" class="mdl-tabs__tab ">Exercice 9</a>
+                <a href="../../JS07/Exo 10/Exo10.html" class="mdl-tabs__tab ">Exercice 10</a>
+                <a href="../../JS07/Exo 11/Exo11.html" class="mdl-tabs__tab ">Exercice 11</a>
+            </div>
+        </div>
+
+        <div class="mdl-tabs__panel is-active" id="JS08">
+            <div class="mdl-tabs__tab-bar">
+                <a href="../../JS08/Exo 1/Exo1.html" class="mdl-tabs__tab is-active">Exercice 1</a>
+                <a href="../../JS08/Exo 2/Exo2.html" class="mdl-tabs__tab ">Exercice 2</a>
+                <a href="../../JS08/Exo 3/Exo3.html" class="mdl-tabs__tab ">Exercice 3</a>
+                <a href="../../JS08/Exo 4/Exo4.html" class="mdl-tabs__tab ">Exercice 4</a>
+                <a href="../../JS08/Exo 5/Exo5.html" class="mdl-tabs__tab ">Exercice 5</a>
+
+            </div>
+        </div>
+
+        <div class="mdl-tabs__panel" id="JS09">
+            <div class="mdl-tabs__tab-bar">
+                <a href="../../JS09/Exo 1/Exo1.html" class="mdl-tabs__tab ">Exercice 1</a>
+                <a href="../../JS09/Exo 2/Exo2.html" class="mdl-tabs__tab ">Exercice 2</a>
+                <a href="../../JS09/Exo 3/Exo3.html" class="mdl-tabs__tab ">Exercice 3</a>
+                <a href="../../JS09/Exo 4/Exo4.html" class="mdl-tabs__tab ">Exercice 4</a>
+            </div>
+        </div>
+
+        <div class="mdl-tabs__panel" id="Evaluation">
+            <div class="mdl-tabs__tab-bar">>
+                <a href="../../Evaluation JS/Exercice 7/Formulaire.html" class="mdl-tabs__tab ">Exercice 7</a>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <h1>JS08 - Exercice 1</h1>
+    <p>Créer les 2 fonctions suivantes</p>
+    <p>Produit(x, y )qui retourne le produit des 2 variables x, y passées en paramètre.</p>
+    <p>afficheImg(image)qui affiche l’image passée en paramètre.</p>
+
+
+    <form action="#" id="JS07" name="Exercice 1">
+    
+
+
+        <button id="bouton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Resultat de x et y
+          </button>
+
+          <button id="bouton2" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Afficher l'image
+          </button>
+
+          <img id="img" src="papillon.jpg" style="display:none;">
+    </form>
+    </form>
+        </label>
+     
+
+
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src=Exo1.js></script>
+
+</body>
+
 </HTML>

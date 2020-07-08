@@ -1,16 +1,27 @@
-var tableau = [666, 1, 7, 69, 33 ,13];
-var j = 1;
-var n = tableau.length;
+function tri(tabl) { // Permet de faire le tri
+    do {
+        changed = false;
 
-    while (j != n){
-    i = j - 1
-    var tmp = tableau[j]
-    
-        while (i > -1 && tableau[i] > tmp){
-            tableau[i+1] = tableau[i]
-            i--
+        for (let i = 0; i < tabl.length - 1; i++) {
+            if (tabl[i] > tabl[i + 1]) {
+                var tampon = tabl[i + 1]
+                tabl[i + 1] = tabl[i]
+                tabl[i] = tampon
+                changed = true;
+            }
         }
-        tableau[i+1] = tmp
-        j++
+    } while (changed)
+}
+
+
+
+
+bouton.addEventListener("click", function () {
+    let num = document.getElementById("num").value;
+    tabl = num.split(" ");
+    for (let i = 0; i < tabl.length ; i++) {
+        tabl [i] = parseInt(tabl[i])
     }
-console.log(tableau)
+    tri(tabl)
+    alert(tabl)
+}); 

@@ -18,6 +18,7 @@
             <a href="#JS07" class="mdl-tabs__tab ">Boucles</a>
             <a href="#JS08" class="mdl-tabs__tab is-active">Fonctions</a>
             <a href="#JS09" class="mdl-tabs__tab">Tableaux</a>
+
             <a href="#Evaluation" class="mdl-tabs__tab">Evaluation</a>
         </div>
 
@@ -54,13 +55,13 @@
             </div>
         </div>
 
-        <div class="mdl-tabs__panel is-active" id="JS08 ">
+        <div class="mdl-tabs__panel is-active" id="JS08">
             <div class="mdl-tabs__tab-bar">
                 <a href="../../JS08/Exo 1/Exo1.html" class="mdl-tabs__tab ">Exercice 1</a>
                 <a href="../../JS08/Exo 2/Exo2.html" class="mdl-tabs__tab ">Exercice 2</a>
-                <a href="../../JS08/Exo 3/Exo3.html" class="mdl-tabs__tab is-active">Exercice 3</a>
+                <a href="../../JS08/Exo 3/Exo3.html" class="mdl-tabs__tab ">Exercice 3</a>
                 <a href="../../JS08/Exo 4/Exo4.html" class="mdl-tabs__tab ">Exercice 4</a>
-                <a href="../../JS08/Exo 5/Exo5.html" class="mdl-tabs__tab ">Exercice 5</a>
+                <a href="../../JS08/Exo 5/Exo5.html" class="mdl-tabs__tab is-active">Exercice 5</a>
 
             </div>
         </div>
@@ -86,19 +87,37 @@
 
 <body>
 
-    <h1>JS08 - Exercice 3</h1>
-    <p>La fonction compte le nombre de fois ou 'lettre' apparaît dans phrase</p>
- 
+    <h1>JS08 - Exercice 5</h1>
+    <p>Concevez la fonction strtok qui prend 3 paramètres str1, str2, 
+        n en entrée et renvoie une chaîne de caractères: 
+        str1 est composée d’une liste de mots séparés par le caractère str2.</p>
+    <p>strtok sert à extraire le nième mot de str1.</p>
+    <p>Exemple:Pour str1 = «robert ;dupont ;amiens ;80000 », strtok (str1, « ; », 3) doit retourner« amiens »</p>
 
 
-    <form action="#" id="JS08" name="Exercice 3">
 
+    <form action="#" id="JS08" name="Exercice 5">
+        <div id="input">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="char">
+                <label class="mdl-textfield__label" for="char">Insérez chaine de caractères</label>
+            </div><br>
+        </div>
 
-    
-
+        <div id="input">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="separ">
+                <label class="mdl-textfield__label" for="separ">Insérez le séparateur</label>
+            </div><br>
+        </div>
+        <div id="input">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="val">
+                <label class="mdl-textfield__label" for="val">Saisir la valeur</label>
+            </div><br>
+        </div>
         <button id="bouton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-            Afficher le nbre de lettres </button>
-
+            Envoyez </button>
 
     </form>
     </form>
@@ -109,7 +128,7 @@
 
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src=Exo3.js></script>
+    <script src=Exo5.js></script>
 
 </body>
 
