@@ -1,4 +1,4 @@
-bouton.addEventListener ("click", function(){
+bouton.addEventListener ("click", function(){ // PERMET L'ENVOIE DE L'EXO AU CLIC
 
 var port = 0;
 var r = 0;

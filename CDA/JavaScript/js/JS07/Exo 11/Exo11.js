@@ -1,8 +1,8 @@
 // EXERCICE 8
 
-var magic = parseInt(Math.random() * 100);
+var magic = parseInt(Math.random() * 100); 
 
-bouton.addEventListener("click", function() {
+bouton.addEventListener("click", function() { // PERMET L'ENVOIE DE L'EXO AU CLIC
 
 
     var num = document.getElementById("nbre").value;

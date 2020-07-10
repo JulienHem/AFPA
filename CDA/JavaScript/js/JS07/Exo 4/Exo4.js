@@ -1,7 +1,7 @@
 // EXERCICE 4
 
 
-bouton.addEventListener("click", function() {
+bouton.addEventListener("click", function() { // PERMET L'ENVOIE DE L'EXO AU CLIC
 
 var n1 = parseInt(document.getElementById("nbre1").value);
 var n2 = parseInt(document.getElementById("nbre2").value);

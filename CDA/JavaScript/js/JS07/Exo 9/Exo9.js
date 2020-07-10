@@ -3,7 +3,7 @@ let j = 0;
 let m = 0;
 let v = 0;
 
-bouton.addEventListener("click", function() {
+bouton.addEventListener("click", function() { // PERMET L'ENVOIE DE L'EXO AU CLIC
     var age = document.getElementById("age").value; // Saisie de l'âge
     if (age < 20){ // Incrémentation des différentes variables 
         j++

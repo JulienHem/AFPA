@@ -1,17 +1,17 @@
 // EXERCICE 2
 
-bouton.addEventListener("click", function() {
-    let year = document.getElementById("ddn").value;
-    let age = 0;
+bouton.addEventListener("click", function() { // PERMET L'ENVOIE DE L'EXO AU CLIC
+    var year = document.getElementById("ddn").value; // ON VA CHERCHER LA VALEUR DE CE QU'IL Y'A DANS L'INPUT
 
-    if (2020 - year < 18)
+
+    
+    if (year < 18) 
     {
-        age = 2020 - year
-        window.alert("Il est mineur " + "Il a "+ age + " ans")
+        window.alert("Il est mineur " + "Il a "+ year + " ans")
     } 
-    else {
-        age = 2020 - year
-        window.alert("Il est majeur " + "Il a " + age + " ans")
+    else if (year < 130) { // Permet une limite de l'âge saisie
+        window.alert("Il est majeur " + "Il a " + year + " ans")
     }
 
+  
 });

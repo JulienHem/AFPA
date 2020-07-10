@@ -1,5 +1,7 @@
    
-   bouton.addEventListener("click", function () {
+   bouton.addEventListener("click", function () { // PERMET L'ENVOIE DE L'EXO AU CLIC
+
+   //EXERCICE MULTIPLICATION ET MOYENNE
 
    function result(n, x) {
         document.getElementById("resultat").innerHTML = "Resultat = " + x * n
@@ -18,6 +20,7 @@
         } while (n1 != 0)
     }
     
+    // EXERCICE DES VOYELLES
     
     function voyelle(mot) {
         var nbVoyelle = 0;
@@ -31,6 +34,8 @@
     
         document.getElementById("voyelle").innerHTML = " Contient " + nbVoyelle + " voyelle(s) " + "et " + (mot.length - nbVoyelle) + " consonne(s)"
     }
+
+    // EXERCICE DU COMPTAGE DE LETTRES
     
     function lafonction(mot, lettre) {
         mot2 = mot.split(lettre);
@@ -38,7 +43,9 @@
         return compteur;
     }
     
-    var menu = window.prompt("Choisir le script" + "\n" + "1- Multiples" + "\n" + "2- Somme et moyenne" + "\n" + "3- Recherche du nombre de voyelles" + "\n" + "4- Recherche du nombre des caractères suivants" + "\n" + "Entrez votre choix : ")
+    var menu = window.prompt("Choisir le script" + "\n" + "1- Multiples" + "\n" + 
+    "2- Somme et moyenne" + "\n" + "3- Recherche du nombre de voyelles" + "\n" + 
+    "4- Recherche du nombre des caractères suivants" + "\n" + "Entrez votre choix : ") // AFFICHAGE DU MENU
     
     switch (menu) {
         case "1":
