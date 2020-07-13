@@ -1,20 +1,20 @@
 function check(id, iderror, regexp, errorMsg) { // Permet de centraliser les variables et les conditions pour chaque ID, RegEx et MSG d'erreurs
-    var idObj = document.getElementById(id).value;
-    var idError = document.getElementById(iderror);
-    var filtre = new RegExp(regexp);
+   let idObj = document.getElementById(id).value;
+   let idError = document.getElementById(iderror);
+   let filtre = new RegExp(regexp);
     if (filtre.test(idObj) === true) {
         hide(iderror, errorMsg) // Appelle de Hide pour pouvoir enlever le message d'erreur quand un champ est valide
         return true;
     } else {
-        msgerror(idError, errorMsg)
+        return msgerror(idError, errorMsg)
     }
 
 }
 
 function checkselect(id, iderror, errorMsg) {
-    var menuselect = document.getElementById("menu");
-    var iderrorSelect = menuselect.options[menuselect.selectedIndex].value;
-    var errorselect = document.getElementById("menu-error");
+    let menuselect = document.getElementById("menu");
+    let iderrorSelect = menuselect.options[menuselect.selectedIndex].value;
+    let errorselect = document.getElementById("menu-error");
     if (iderrorSelect !== "empty") {
         hide(iderror, errorMsg)
         return true;
@@ -50,7 +50,7 @@ function hide(iderror, errorMsg) { // Ici la fonction permet de cacher les messa
 }
 
 
-var tabverif = [ // On rentre toutes les valeurs dans ce tableau pour les vérifier une à une
+let tabverif = [ // On rentre toutes les valeurs dans ce tableau pour les vérifier une à une
 
     ["name", "name-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Vous devez rentrer un nom valable"],
     ["pren", "prenom-error", "^[a-zA-Zèéàiïôöüê' -]+$", "Veuillez rentrer un prénom valable"],
@@ -66,7 +66,7 @@ var tabverif = [ // On rentre toutes les valeurs dans ce tableau pour les vérif
 
 function verification() { // Appelle de la fonction pour commencer la vérification des données entrées dans les champs
 
-    var sortie = true;
+    let sortie = true;
     for (i = 0; i < tabverif.length - 2; i++) { // Permet la vérification dans le tableau grâce à sa longueur
         if (check(tabverif[i][0], tabverif[i][1], tabverif[i][2], tabverif[i][3]) === false) {
             sortie = false // Si il y'a une erreur cela va les afficher
@@ -74,7 +74,6 @@ function verification() { // Appelle de la fonction pour commencer la vérificat
         if (checkselect(tabverif[8][0], tabverif[8][1], tabverif[8][2]) === false) {
             sortie = false
         }
-
         if (checkbox(tabverif[9][0], tabverif[9][1], tabverif[9][2]) === false) {
             sortie = false
         }
@@ -82,26 +81,26 @@ function verification() { // Appelle de la fonction pour commencer la vérificat
     return sortie
 }
 
+
 $("input, textarea, select").on("keyup change", function (event) { // Permet le temps réel
-    console.log(event.target);
-    var getID = event.target.id;
+    let getID = event.target.id;
     for (i = 0; i < tabverif.length; i++) {
         if (getID === tabverif[i][0]) { // Va vérifier ligne par ligne
-            if (event.target.type === "select-one") {
-                checkselect(tabverif[i][0], tabverif[i][1], tabverif[i][2], tabverif[i][3]);
-            }
             if (event.target.type === "text") {
                 check(tabverif[i][0], tabverif[i][1], tabverif[i][2], tabverif[i][3]); // // Compare ligne par ligne, lance le check et affiche le message d'erreur si check retourne false
             }
+            if (event.target.type === "select-one") {
+                checkselect(tabverif[8][0], tabverif[8][1], tabverif[8][2]);
+            }
             if (event.target.type === "checkbox"){
-                checkbox(tabverif[i][0], tabverif[i][1], tabverif[i][2], tabverif[i][3]);
+                checkbox(tabverif[9][0], tabverif[9][1], tabverif[9][2]);
             }
         }
     }
 });
 
 //  Lance la vérification au clique de "Envoyer" du formulaire
-var verif = document.getElementById("send")
+let verif = document.getElementById("send")
 $(verif).on("click", function (event) {
     event.preventDefault()
     if (verification() === true) {
