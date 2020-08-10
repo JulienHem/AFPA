@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Format{% endblock %}
+
+{% block body %}
+    <h1>Edit Format</h1>
+
+    {{ include('format/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('format_index') }}">back to list</a>
+
+    {{ include('format/_delete_form.html.twig') }}
+{% endblock %}

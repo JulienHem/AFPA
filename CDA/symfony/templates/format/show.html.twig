@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Format{% endblock %}
+
+{% block body %}
+    <h1>Format</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ format.id }}</td>
+            </tr>
+            <tr>
+                <th>FormatName</th>
+                <td>{{ format.formatName }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('format_index') }}">back to list</a>
+
+    <a href="{{ path('format_edit', {'id': format.id}) }}">edit</a>
+
+    {{ include('format/_delete_form.html.twig') }}
+{% endblock %}
