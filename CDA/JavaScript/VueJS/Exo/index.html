@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Première Vue avec Vue LUL</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+    <div id="app">
+        {{ message }}
+        <hr>
+        {{ result }}
+
+
+        <div class="row m-0 p-0 pb-2 pt-2">
+            <div class="d-flex justify-content-center">
+                <div class="col-4">
+                    <button v-on:click="num(1)" type="button" class="btn btn-secondary">1</button>
+                </div>
+                <div class="col-4">
+                    <button v-on:click="num(2)" type="button" class="btn btn-secondary">2</button>
+                </div>
+                <div class="col-4">
+                    <button v-on:click="num(3)" type="button" class="btn btn-secondary">3</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 p-0 pb-2 pt-2">
+            <div class="d-flex justify-content-center">
+                <div class="col-4">
+                    <button v-on:click="num(4)" type="button" class="btn btn-secondary">4</button>
+                </div>
+                <div class="col-4">
+                    <button v-on:click="num(5)" type="button" class="btn btn-secondary">5</button>
+                </div>
+                <div class="col-4">
+                    <button v-on:click="num(6)" type="button" class="btn btn-secondary">6</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 p-0 pb-2 pt-2">
+            <div class="d-flex justify-content-center">
+                <div class="col-4">
+                    <button v-on:click="num(7)" type="button" class="btn btn-secondary">7</button>
+                </div>
+                <div class="col-4">
+                    <button v-on:click="num(8)" type="button" class="btn btn-secondary">8</button>
+                </div>
+
+                <div class="col-4">
+                    <button v-on:click="num(9)" type="button" class="btn btn-secondary">9</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 p-0 pb-2 pt-2">
+            <div class="d-flex justify-content-center">
+                <div class="col-4">
+                    <button v-on:click="operateur('+')" type="button" class="btn btn-secondary">+</button>
+                </div>
+                <div class="col-4">
+                    <button v-on:click="operateur('-')" type="button" class="btn btn-secondary">-</button>
+                </div>
+
+                <div class="col-4">
+                    <button v-on:click="operateur('=')" type="button" class="btn btn-secondary">=</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="public/js/VueExo3.js"></script>
+</html>
