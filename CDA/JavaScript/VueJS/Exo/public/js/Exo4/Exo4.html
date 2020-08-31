@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Première Vue avec Vue LUL</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+</head>
+
+
+
+<body>
+<div id="app">
+    {{ message }}
+    <button v-on:click="btn1_click" v-show="btn1">Test</button>
+    <button v-on:click="btn2_click" v-show="btn2">Test</button>
+
+    <hr>
+    <div id="label1" v-show="label_visible"></div>
+    <div id="label2" v-show="label_visible2"></div>
+
+</div>
+
+</body>
+<script src="Exo4.js"></script>
+</html>

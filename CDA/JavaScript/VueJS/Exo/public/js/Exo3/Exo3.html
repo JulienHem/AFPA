@@ -18,19 +18,19 @@
     <div id="app">
         {{ message }}
         <hr>
-        {{ result }}
+        {{ result || 0 }}
 
 
         <div class="row m-0 p-0 pb-2 pt-2">
             <div class="d-flex justify-content-center">
                 <div class="col-4">
-                    <button v-on:click="num(1)" type="button" class="btn btn-secondary">1</button>
+                    <button v-on:click="append(1)" type="button" class="btn btn-secondary">1</button>
                 </div>
                 <div class="col-4">
-                    <button v-on:click="num(2)" type="button" class="btn btn-secondary">2</button>
+                    <button v-on:click="append(2)" type="button" class="btn btn-secondary">2</button>
                 </div>
                 <div class="col-4">
-                    <button v-on:click="num(3)" type="button" class="btn btn-secondary">3</button>
+                    <button v-on:click="append(3)" type="button" class="btn btn-secondary">3</button>
                 </div>
             </div>
         </div>
@@ -38,13 +38,13 @@
         <div class="row m-0 p-0 pb-2 pt-2">
             <div class="d-flex justify-content-center">
                 <div class="col-4">
-                    <button v-on:click="num(4)" type="button" class="btn btn-secondary">4</button>
+                    <button v-on:click="append(4)" type="button" class="btn btn-secondary">4</button>
                 </div>
                 <div class="col-4">
-                    <button v-on:click="num(5)" type="button" class="btn btn-secondary">5</button>
+                    <button v-on:click="append(5)" type="button" class="btn btn-secondary">5</button>
                 </div>
                 <div class="col-4">
-                    <button v-on:click="num(6)" type="button" class="btn btn-secondary">6</button>
+                    <button v-on:click="append(6)" type="button" class="btn btn-secondary">6</button>
                 </div>
             </div>
         </div>
@@ -52,14 +52,14 @@
         <div class="row m-0 p-0 pb-2 pt-2">
             <div class="d-flex justify-content-center">
                 <div class="col-4">
-                    <button v-on:click="num(7)" type="button" class="btn btn-secondary">7</button>
+                    <button v-on:click="append(7)" type="button" class="btn btn-secondary">7</button>
                 </div>
                 <div class="col-4">
-                    <button v-on:click="num(8)" type="button" class="btn btn-secondary">8</button>
+                    <button v-on:click="append(8)" type="button" class="btn btn-secondary">8</button>
                 </div>
 
                 <div class="col-4">
-                    <button v-on:click="num(9)" type="button" class="btn btn-secondary">9</button>
+                    <button v-on:click="append(9)" type="button" class="btn btn-secondary">9</button>
                 </div>
             </div>
         </div>
@@ -67,22 +67,28 @@
         <div class="row m-0 p-0 pb-2 pt-2">
             <div class="d-flex justify-content-center">
                 <div class="col-4">
-                    <button v-on:click="operateur('+')" type="button" class="btn btn-secondary">+</button>
+                    <button v-on:click="plus('+')" type="button" class="btn btn-secondary">+</button>
                 </div>
                 <div class="col-4">
-                    <button v-on:click="operateur('-')" type="button" class="btn btn-secondary">-</button>
+                    <button v-on:click="minus('-')" type="button" class="btn btn-secondary">-</button>
                 </div>
 
                 <div class="col-4">
-                    <button v-on:click="operateur('=')" type="button" class="btn btn-secondary">=</button>
+                    <button v-on:click="equal('=')" type="button" class="btn btn-secondary">=</button>
                 </div>
             </div>
-
+        </div>
+        <div class="row m-0 p-0 pb-2 pt-2">
+            <div class="col-12">
+                <div>
+                    <button v-on:click="clear" type="button" class="btn btn-secondary">C</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 
 </body>
-<script src="public/js/VueExo3.js"></script>
+<script src="VueExo3.js"></script>
 </html>
