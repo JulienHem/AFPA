@@ -1,9 +1,11 @@
 import ASCII.ASCII;
-import Cercle.Cercle;
+import Cercle.DesCercles;
 import Diviseur.Diviseur;
+import ObjCercles.Cercles;
 import Palindrome.Palindrome;
 import SecEnHeures.SecEnHeures;
 import Température.Température;
+import TriNombre.Tableaux;
 import Triangle.Triangle;
 import Valeurs.Valeurs;
 
@@ -20,7 +22,6 @@ public class index {
         text();
 
 
-
         while (toggle) {
             System.out.println("0 - Pour quitter le programme. ");
             System.out.println("1 - Pour relancer le menu. ");
@@ -30,13 +31,15 @@ public class index {
             switch (menu) {
                 case "0" -> toggle = false;
                 case "2" -> ASCII.toASCII();
-                case "3" -> Cercle.toCercle();
+                case "3" -> Cercles.toCercles();
                 case "4" -> Diviseur.toDiviseur();
                 case "5" -> Palindrome.toDiviseur();
                 case "6" -> SecEnHeures.toSecEnHeures();
                 case "7" -> Température.toTemperature();
                 case "8" -> Triangle.toTriangle();
                 case "9" -> Valeurs.toValeurs();
+                case "10" -> DesCercles.toRayon();
+                case "11" -> Tableaux.toTableaux();
                 default -> System.out.println("Cet exercice n'existe pas");
 
             }
@@ -56,6 +59,9 @@ public class index {
         System.out.println("7 - En utilisant la formule C = (5/9)(F-32) écrire un programme qui lit une température exprimée en degrés Fahrenheit et affiche sa valeur en degrés Celsius.");
         System.out.println("8 - Écrire un programme qui affiche un triangle isocèle formé d'étoiles.");
         System.out.println("9 - Écrire un programme qui échange les valeurs de nX et nY.");
+        System.out.println("10 - Premier exercice des objets sur les cercles. ");
+        System.out.println("11 - Tri d'un tableau contenant des nombres ");
+
 
     }
 }

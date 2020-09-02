@@ -1,22 +1,38 @@
 package Cercle;
 
-import java.util.Scanner;
 
-public class Cercle
-{
-    final static double PI=3.1416;
+public class Cercle {
 
-    public static void toCercle()
-    {
-        double rayon;
+    private double rayon;
+    private double PI = 3.1416;
+
+
+    public double calculSurface() {
+
         double surface;
 
-        Scanner lectureclavier = new Scanner(System.in) ;
-        System.out.println("Entrer la surface: ");
-        rayon = lectureclavier.nextDouble();
-        surface = Math.pow(rayon, 2) * PI ;
-        System.out.print("Le surface du cercle est de : ");
-        System.out.println(surface);
-        lectureclavier.next() ;
+        surface = Math.pow(rayon, 2) * PI;
+        System.out.println("La surface est de : " + surface);
+        return surface;
+
+    }
+
+    public double calculCirconferences() {
+
+        double circ;
+
+        circ = 2 * PI * rayon;
+        System.out.println("La circonference est de : " + circ);
+        return circ;
+
+    }
+
+    public double getRayon() {
+        return rayon;
+    }
+
+    public void setRayon(double rayon) {
+        this.rayon = rayon;
     }
 }
+

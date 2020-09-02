@@ -20,18 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="536320c4-3078-4035-8a35-86570fed7fe7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Java/Exercices/Opérateurs/Exo 2/Exo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/Exercices/Opérateurs/Exo 3/Exo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/Exercices/Opérateurs/Exo 5/Exo5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/Exercices/Opérateurs/Exo 6/Exo6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/Exercices/StructureControle/Calculette/Calculette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/Exercices/StructureControle/Triangle/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exo/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Exo/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exo/public/js/VueExo1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exo/public/js/VueExo2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exo/public/js/VueExo3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Java.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +67,7 @@
       <workItem from="1598425664726" duration="12912000" />
       <workItem from="1598509502927" duration="7125000" />
       <workItem from="1598883656864" duration="145000" />
+      <workItem from="1599028292967" duration="52000" />
     </task>
     <servers />
   </component>
