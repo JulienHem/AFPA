@@ -5,7 +5,7 @@ import ObjCercles.Cercles;
 import Palindrome.Palindrome;
 import SecEnHeures.SecEnHeures;
 import Température.Température;
-import TriNombre.Tableaux;
+import TriNombre.TriNombre;
 import Triangle.Triangle;
 import Valeurs.Valeurs;
 
@@ -39,7 +39,10 @@ public class index {
                 case "8" -> Triangle.toTriangle();
                 case "9" -> Valeurs.toValeurs();
                 case "10" -> DesCercles.toRayon();
-                case "11" -> Tableaux.toTableaux();
+                case "11" -> {
+                    new TriNombre(5);
+                    new TriNombre();
+                }
                 default -> System.out.println("Cet exercice n'existe pas");
 
             }

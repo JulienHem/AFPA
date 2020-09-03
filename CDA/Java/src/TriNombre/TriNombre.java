@@ -6,30 +6,49 @@ import java.util.Scanner;
 
 public class TriNombre {
 
+    //    Longueur du tableau déjà défini
+    public TriNombre(int length) {
 
-    private static final int[] numArray = new int[5];
-    private static final int i = numArray.length;
+        int[] intArray = new int[length];
+        saisie(intArray);
 
-    public static void saisie() {
+    }
 
+//    On définit la longueur du tableau
+
+    public TriNombre() {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Veuillez saisir une longueur");
+        int[] intArray = new int[scan.nextInt()];
+        saisie(intArray);
+
+
+    }
+
+    public void saisie(int[] intArray) {
         int x;
         Scanner scan = new Scanner(System.in);
 
-        for (x = 0; x < i; x++) {
+        for (x = 0; x < intArray.length; x++) {
             System.out.println("Remplissez le tableau");
-            numArray[x] = scan.nextInt();
+            intArray[x] = scan.nextInt();
         }
-    }
 
-    public static void tri() {
-        Arrays.sort(numArray);
-    }
-
-    public static void affiche() {
-
-        System.out.println(Arrays.toString(numArray));
+        tri(intArray);
+        affiche(intArray);
 
     }
 
+    public void tri(int[] intArray) {
+        Arrays.sort(intArray);
+
+    }
+
+    public void affiche(int[] intArray) {
+
+        System.out.println(Arrays.toString(intArray));
+
+    }
 
 }
