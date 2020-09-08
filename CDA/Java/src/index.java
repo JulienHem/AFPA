@@ -1,5 +1,6 @@
 import ASCII.ASCII;
 import Cercle.DesCercles;
+import Client.Client;
 import Diviseur.Diviseur;
 import ObjCercles.Cercles;
 import Palindrome.Palindrome;
@@ -13,6 +14,7 @@ import java.util.Scanner;
 
 
 public class index {
+
 
     public static void main(String[] args) {
 
@@ -43,6 +45,22 @@ public class index {
                     new TriNombre(5);
                     new TriNombre();
                 }
+                case "12" -> {
+                    Client[] client = new Client[4];
+                    Client[] client2 = new Client[3];
+                    Client[] client3 = new Client[3];
+                    Client[] client4 = new Client[3];
+                    client[0] = new Client("Paul", "Weller", "Baker Street", "Londre");
+                    client2[0] = new Client("White", "Jack", "", "Detroit");
+                    client3[0] = new Client("Claypool", "Les", "", "San Fransisco");
+                    client4[0] = new Client("Thunders", "Johnny", "", "New York");
+                    System.out.println(client[0].toString());
+                    System.out.println(client2[0].toString());
+                    System.out.println(client3[0].toString());
+                    System.out.println(client4[0].toString());
+
+
+                }
                 default -> System.out.println("Cet exercice n'existe pas");
 
             }
@@ -64,6 +82,7 @@ public class index {
         System.out.println("9 - Écrire un programme qui échange les valeurs de nX et nY.");
         System.out.println("10 - Premier exercice des objets sur les cercles. ");
         System.out.println("11 - Tri d'un tableau contenant des nombres ");
+        System.out.println("12 - Implémenter une classe client, possédant : Nom, Prenom, Adresse, Ville ");
 
 
     }

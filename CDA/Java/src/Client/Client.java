@@ -1,35 +1,38 @@
 package Client;
 
-import java.util.Scanner;
+public class Client {
 
-public abstract class Client {
+    private String nom;
+    private String prenom;
+    private String ville;
+    private String adresse;
 
-    public String details() {
 
-        return toString();
-
-    }
-
-    public Client() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Veuillez saisir une longueur");
-        String[] clientArray = new String[scan.nextInt()];
-
-    }
-
-    public void details(String[] clientArray) {
-
-        int x;
-        Scanner scan = new Scanner(System.in);
-
-        for (x = 0; x < clientArray.length; x++) {
-            System.out.println("Insérer les informations clients");
-            clientArray[x] = scan.nextLine();
-
-        }
-
+    public Client(String nom, String prenom, String adresse, String ville) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.ville = ville;
+        this.adresse = adresse;
 
     }
 
+
+    public Client(String nom, String prenom, String ville) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.ville = ville;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", ville='" + ville + '\'' +
+                ", adresse='" + adresse + '\'' +
+                '}';
+    }
 }
+
 

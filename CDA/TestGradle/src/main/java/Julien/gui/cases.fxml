@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="353.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Julien.gui.Cases">
+    <children>
+        <TextField fx:id="textarea" layoutX="14.0" layoutY="52.0" onAction="#filled" prefHeight="25.0" prefWidth="352.0" />
+        <TitledPane fx:id="choice_box" animated="false" layoutX="384.0" layoutY="24.0" opacity="0.4" prefHeight="124.0" prefWidth="202.0" text="Choix">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.85" prefHeight="99.0" prefWidth="200.0">
+                    <children>
+                        <CheckBox fx:id="background_color" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#activate_background" text="Couleur de fond" />
+                        <CheckBox fx:id="text_color" layoutX="14.0" layoutY="46.0" mnemonicParsing="false" onAction="#activate_textcolor" text="Couleur du texte" />
+                        <CheckBox fx:id="casse1" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onAction="#activate_casse" text="Casse" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" layoutX="14.0" layoutY="209.0" opacity="0.4" prefHeight="124.0" prefWidth="163.0" text="Fond">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="99.0" prefWidth="200.0">
+                    <children>
+                        <RadioButton fx:id="red_background" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#put_red_bg" text="Rouge" />
+                        <RadioButton fx:id="green_background" layoutX="15.0" layoutY="41.0" mnemonicParsing="false" onAction="#put_green_bg" text="Vert" />
+                        <RadioButton fx:id="blue_background" layoutX="14.0" layoutY="67.0" mnemonicParsing="false" onAction="#put_blue_bg" text="Bleu" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" layoutX="221.0" layoutY="209.0" opacity="0.4" prefHeight="124.0" prefWidth="163.0" text="Texte">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="99.0" prefWidth="200.0">
+                    <children>
+                        <RadioButton fx:id="red_text" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#put_red_text" text="Rouge" />
+                        <RadioButton fx:id="white_text" layoutX="15.0" layoutY="41.0" mnemonicParsing="false" onAction="#put_white_text" text="Blanc" />
+                        <RadioButton fx:id="black_text" layoutX="14.0" layoutY="67.0" mnemonicParsing="false" onAction="#put_black_text" text="Noir" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" layoutX="423.0" layoutY="209.0" opacity="0.4" prefHeight="124.0" prefWidth="163.0" text="Casse">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="99.0" prefWidth="200.0">
+                    <children>
+                        <RadioButton fx:id="minu" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#lowercase" text="Minuscule" />
+                        <RadioButton fx:id="maju" layoutX="15.0" layoutY="41.0" mnemonicParsing="false" onAction="#uppercase" text="Majuscule" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <Label fx:id="label" layoutX="16.0" layoutY="100.0" prefHeight="45.0" prefWidth="352.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
