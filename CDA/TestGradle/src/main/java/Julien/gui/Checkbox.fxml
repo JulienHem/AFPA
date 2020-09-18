@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="414.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jeremy.GUI.CheckboxController">
+   <children>
+      <GridPane layoutX="23.0" layoutY="12.0" prefHeight="390.0" prefWidth="557.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="textField" prefHeight="25.0" prefWidth="86.0" GridPane.columnSpan="4" />
+            <TitledPane animated="false" collapsible="false" prefHeight="209.0" prefWidth="75.0" text="Fond" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="red1" layoutX="25.0" layoutY="26.0" mnemonicParsing="false" onAction="#changeBack" text="Rouge">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="fondgrp" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="green" layoutX="25.0" layoutY="75.0" mnemonicParsing="false" onAction="#changeBack" text="Vert" toggleGroup="$fondgrp" />
+                        <RadioButton fx:id="blue" layoutX="25.0" layoutY="124.0" mnemonicParsing="false" onAction="#changeBack" text="Bleu" toggleGroup="$fondgrp" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" text="Texte" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="red2" layoutX="26.0" layoutY="28.0" mnemonicParsing="false" onAction="#changeText" text="Rouge">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="textgrp" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="white" layoutX="26.0" layoutY="73.0" mnemonicParsing="false" onAction="#changeText" text="Blanc" toggleGroup="$textgrp" />
+                        <RadioButton fx:id="black" layoutX="26.0" layoutY="123.0" mnemonicParsing="false" onAction="#changeText" text="Noir" toggleGroup="$textgrp" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" text="Casse" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="124.0">
+                     <children>
+                        <RadioButton fx:id="minus" layoutX="26.0" layoutY="27.0" mnemonicParsing="false" text="Minuscule" />
+                        <RadioButton fx:id="maxi" layoutX="26.0" layoutY="73.0" mnemonicParsing="false" text="Majuscule" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" prefHeight="147.0" prefWidth="210.0" text="Choix" GridPane.columnIndex="5" GridPane.columnSpan="3" GridPane.rowSpan="2">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="35.0" prefWidth="208.0">
+                     <children>
+                        <CheckBox layoutX="14.0" layoutY="19.0" mnemonicParsing="false" text="Couleur de fond" />
+                        <CheckBox layoutX="14.0" layoutY="52.0" mnemonicParsing="false" text="Couleur de texte" />
+                        <CheckBox layoutX="14.0" layoutY="82.0" mnemonicParsing="false" text="Casse" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <Label fx:id="response" prefHeight="17.0" prefWidth="301.0" text="Label" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
